@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Header from '../components/Header';
+import HeroSection from '../components/HeroSection';
+import TreatmentsSection from '../components/TreatmentsSection';
+import TestimonialsSection from '../components/TestimonialsSection';
+import AppointmentSection from '../components/AppointmentSection';
+import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
 
 const Index = () => {
+  React.useEffect(() => {
+    document.title = "Dra. Daniela Bravo | Dermatología Clínica y Estética";
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <HeroSection />
+        <TreatmentsSection />
+        <TestimonialsSection />
+        <AppointmentSection />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 };
