@@ -13,23 +13,7 @@ const ContactSection = () => {
 
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Formulario */}
-            <div className="bg-blanco-calido border border-rosa-empolvado p-8 rounded-3xl">
-              <h3 className="text-2xl font-light text-gris-muy-oscuro mb-8">Envíanos tu consulta</h3>
-              <form className="space-y-6">
-                <div>
-                  <input type="text" placeholder="Nombre" className="w-full px-4 py-4 border border-rosa-empolvado rounded-xl focus:outline-none focus:border-rosa-coral transition-colors font-light text-gris-oscuro bg-blanco" />
-                </div>
-                <div>
-                  <input type="email" placeholder="Email" className="w-full px-4 py-4 border border-rosa-empolvado rounded-xl focus:outline-none focus:border-rosa-coral transition-colors font-light text-gris-oscuro bg-blanco" />
-                </div>
-                <div>
-                  <textarea rows={5} placeholder="Consulta" className="w-full px-4 py-4 border border-rosa-empolvado rounded-xl focus:outline-none focus:border-rosa-coral transition-colors font-light resize-none text-gris-oscuro bg-blanco"></textarea>
-                </div>
-                <button type="submit" className="w-full bg-rosa-coral text-blanco py-4 rounded-xl font-medium hover:bg-rosa-coral/85 transition-all duration-300">
-                  Enviar
-                </button>
-              </form>
-            </div>
+            
 
             {/* Información */}
             <div className="space-y-8">
