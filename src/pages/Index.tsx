@@ -13,7 +13,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-blanco-nieve">
+    <div className="min-h-screen bg-blanco-calido">
       <Header />
       <main>
         <HeroSection />

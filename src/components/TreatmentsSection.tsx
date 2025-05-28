@@ -38,12 +38,12 @@ const TreatmentsSection = () => {
   ];
 
   return (
-    <section id="tratamientos" className="bg-rosa-pastel/10 py-24">
+    <section id="tratamientos" className="bg-blanco border-t border-rosa-empolvado py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-gris-paloma mb-6">Tratamientos</h2>
-            <p className="text-xl text-gris-paloma/80 font-light">
+            <h2 className="text-4xl font-light text-gris-muy-oscuro mb-6">Tratamientos</h2>
+            <p className="text-xl text-gris-oscuro font-light">
               Cada tratamiento es personalizado según tus necesidades específicas
             </p>
           </div>
@@ -52,10 +52,10 @@ const TreatmentsSection = () => {
             {treatments.map((treatment, index) => (
               <div 
                 key={index} 
-                className="bg-blanco-nieve p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="bg-blanco-calido p-8 rounded-2xl border border-rosa-empolvado hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-xl font-medium text-gris-paloma mb-4">{treatment.title}</h3>
-                <p className="text-gris-paloma/70 font-light leading-relaxed">{treatment.description}</p>
+                <h3 className="text-xl font-medium text-gris-muy-oscuro mb-4">{treatment.title}</h3>
+                <p className="text-gris-oscuro font-light leading-relaxed">{treatment.description}</p>
               </div>
             ))}
           </div>

@@ -29,24 +29,24 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#FADADD',
-					foreground: '#333333'
+					DEFAULT: '#F6A5A5',
+					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: '#D8D8D8',
-					foreground: '#333333'
+					DEFAULT: '#E8B6B6',
+					foreground: '#4B4B4B'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
 				muted: {
-					DEFAULT: '#D8D8D8',
-					foreground: '#666666'
+					DEFAULT: '#E8B6B6',
+					foreground: '#4B4B4B'
 				},
 				accent: {
-					DEFAULT: '#FADADD',
-					foreground: '#333333'
+					DEFAULT: '#F6A5A5',
+					foreground: '#FFFFFF'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -66,10 +66,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for the new palette
-				'rosa-pastel': '#FADADD',
-				'blanco-nieve': '#FFFFFF',
-				'gris-paloma': '#D8D8D8'
+				// Updated color palette with better contrast
+				'rosa-coral': '#F6A5A5',
+				'rosa-empolvado': '#E8B6B6',
+				'blanco-calido': '#FFFCFA',
+				'gris-oscuro': '#4B4B4B',
+				'gris-muy-oscuro': '#2F2F2F',
+				'blanco': '#FFFFFF'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
