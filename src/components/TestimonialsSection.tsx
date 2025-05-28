@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const TestimonialsSection = () => {
@@ -41,11 +40,11 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="testimonios" className="py-24 bg-gradient-to-br from-pink-50 to-blue-50">
+    <section id="testimonios" className="py-24 bg-gradient-to-br from-gris-paloma to-blanco-nieve">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Testimonios</h2>
-          <div className="h-1 w-20 bg-pink-500 mx-auto mb-6"></div>
+          <div className="h-1 w-20 bg-pink-400 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600">
             La satisfacción de nuestros pacientes es nuestra mejor carta de presentación.
             Conoce algunas de sus experiencias.
@@ -56,13 +55,13 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial) => (
             <div 
               key={testimonial.id} 
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-blanco-nieve p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex items-center mb-4">
                 <img 
                   src={testimonial.image} 
                   alt={testimonial.name} 
-                  className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-pink-200"
+                  className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-rosa-pastel"
                 />
                 <div>
                   <h3 className="font-bold text-gray-800">{testimonial.name}</h3>
@@ -76,7 +75,7 @@ const TestimonialsSection = () => {
                 </div>
               </div>
               <blockquote className="italic text-gray-600 relative">
-                <svg className="absolute top-0 left-0 transform -translate-x-4 -translate-y-4 w-8 h-8 text-pink-200 opacity-50" fill="currentColor" viewBox="0 0 32 32">
+                <svg className="absolute top-0 left-0 transform -translate-x-4 -translate-y-4 w-8 h-8 text-rosa-pastel opacity-50" fill="currentColor" viewBox="0 0 32 32">
                   <path d="M10 8c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zM28 8c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z"></path>
                 </svg>
                 {testimonial.text}

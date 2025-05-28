@@ -3,12 +3,12 @@ import React from 'react';
 
 const AppointmentSection = () => {
   return (
-    <section id="reserva" className="py-24 bg-white">
+    <section id="reserva" className="py-24 bg-blanco-nieve">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl shadow-xl overflow-hidden">
+          <div className="bg-gradient-to-r from-pink-300 to-pink-400 rounded-2xl shadow-xl overflow-hidden">
             <div className="md:flex">
-              <div className="md:w-1/2 p-10 md:p-12 bg-white">
+              <div className="md:w-1/2 p-10 md:p-12 bg-blanco-nieve">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Reserva tu Turno</h2>
                 <p className="text-gray-600 mb-8">
                   Agenda tu consulta de manera fácil y rápida a través de DrApp. 
@@ -16,26 +16,26 @@ const AppointmentSection = () => {
                 </p>
                 <div className="space-y-6">
                   <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                      <span className="text-blue-600 font-bold">1</span>
+                    <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-4">
+                      <span className="text-pink-400 font-bold">1</span>
                     </div>
                     <div className="text-gray-700">Selecciona el tipo de consulta</div>
                   </div>
                   <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                      <span className="text-blue-600 font-bold">2</span>
+                    <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-4">
+                      <span className="text-pink-400 font-bold">2</span>
                     </div>
                     <div className="text-gray-700">Elige la fecha y horario disponible</div>
                   </div>
                   <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                      <span className="text-blue-600 font-bold">3</span>
+                    <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-4">
+                      <span className="text-pink-400 font-bold">3</span>
                     </div>
                     <div className="text-gray-700">Completa tus datos personales</div>
                   </div>
                   <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                      <span className="text-blue-600 font-bold">4</span>
+                    <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-4">
+                      <span className="text-pink-400 font-bold">4</span>
                     </div>
                     <div className="text-gray-700">Recibe la confirmación en tu email</div>
                   </div>
@@ -45,7 +45,7 @@ const AppointmentSection = () => {
                   href="https://drapp.com.ar/dra.danielabravo"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-10 inline-block bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="mt-10 inline-block bg-gradient-to-r from-pink-300 to-pink-400 text-white px-8 py-3 rounded-lg font-semibold hover:from-pink-400 hover:to-pink-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   Reservar en DrApp
                 </a>

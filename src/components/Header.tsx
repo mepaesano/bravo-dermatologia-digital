@@ -14,12 +14,12 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50">
+    <header className="bg-blanco-nieve/95 backdrop-blur-sm shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-100 to-pink-100 rounded-full flex items-center justify-center">
-              <span className="text-blue-600 font-bold text-lg">DB</span>
+            <div className="w-10 h-10 bg-gradient-to-br from-rosa-pastel to-pink-200 rounded-full flex items-center justify-center">
+              <span className="text-pink-600 font-bold text-lg">DB</span>
             </div>
             <div>
               <h1 className="text-2xl font-bold text-gray-800">Dra. Daniela Bravo</h1>
@@ -32,19 +32,19 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('inicio')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <button onClick={() => scrollToSection('inicio')} className="text-gray-700 hover:text-pink-400 transition-colors font-medium">
               Inicio
             </button>
-            <button onClick={() => scrollToSection('tratamientos')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <button onClick={() => scrollToSection('tratamientos')} className="text-gray-700 hover:text-pink-400 transition-colors font-medium">
               Tratamientos
             </button>
-            <button onClick={() => scrollToSection('testimonios')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <button onClick={() => scrollToSection('testimonios')} className="text-gray-700 hover:text-pink-400 transition-colors font-medium">
               Testimonios
             </button>
-            <button onClick={() => scrollToSection('reserva')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <button onClick={() => scrollToSection('reserva')} className="text-gray-700 hover:text-pink-400 transition-colors font-medium">
               Reserva de Turnos
             </button>
-            <button onClick={() => scrollToSection('contacto')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <button onClick={() => scrollToSection('contacto')} className="text-gray-700 hover:text-pink-400 transition-colors font-medium">
               Contacto
             </button>
           </nav>
@@ -55,7 +55,7 @@ const Header = () => {
               href="https://instagram.com/dra.danielabravo" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-pink-500 transition-colors"
+              className="text-gray-600 hover:text-pink-400 transition-colors"
             >
               <Instagram className="w-5 h-5" />
             </a>
@@ -76,29 +76,29 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 py-4 border-t border-gray-200">
+          <nav className="md:hidden mt-4 py-4 border-t border-gris-paloma">
             <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('inicio')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">
+              <button onClick={() => scrollToSection('inicio')} className="text-gray-700 hover:text-pink-400 transition-colors font-medium text-left">
                 Inicio
               </button>
-              <button onClick={() => scrollToSection('tratamientos')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">
+              <button onClick={() => scrollToSection('tratamientos')} className="text-gray-700 hover:text-pink-400 transition-colors font-medium text-left">
                 Tratamientos
               </button>
-              <button onClick={() => scrollToSection('testimonios')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">
+              <button onClick={() => scrollToSection('testimonios')} className="text-gray-700 hover:text-pink-400 transition-colors font-medium text-left">
                 Testimonios
               </button>
-              <button onClick={() => scrollToSection('reserva')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">
+              <button onClick={() => scrollToSection('reserva')} className="text-gray-700 hover:text-pink-400 transition-colors font-medium text-left">
                 Reserva de Turnos
               </button>
-              <button onClick={() => scrollToSection('contacto')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">
+              <button onClick={() => scrollToSection('contacto')} className="text-gray-700 hover:text-pink-400 transition-colors font-medium text-left">
                 Contacto
               </button>
-              <div className="pt-4 border-t border-gray-200">
+              <div className="pt-4 border-t border-gris-paloma">
                 <a 
                   href="https://instagram.com/dra.danielabravo" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center text-gray-600 hover:text-pink-500 transition-colors"
+                  className="flex items-center text-gray-600 hover:text-pink-400 transition-colors"
                 >
                   <Instagram className="w-5 h-5 mr-2" />
                   Instagram

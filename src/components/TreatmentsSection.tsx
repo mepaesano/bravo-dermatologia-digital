@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const TreatmentsSection = () => {
@@ -54,11 +53,11 @@ const TreatmentsSection = () => {
   ];
 
   return (
-    <section id="tratamientos" className="py-24 bg-blue-50">
+    <section id="tratamientos" className="py-24 bg-rosa-pastel">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Nuestros Tratamientos</h2>
-          <div className="h-1 w-20 bg-blue-600 mx-auto mb-6"></div>
+          <div className="h-1 w-20 bg-pink-400 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600">
             Ofrecemos un amplio espectro de tratamientos dermatológicos clínicos y estéticos, 
             personalizados para cada paciente y sus necesidades específicas.
@@ -69,7 +68,7 @@ const TreatmentsSection = () => {
           {treatments.map((treatment, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+              className="bg-blanco-nieve rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <div className="h-48 overflow-hidden">
                 <img 
@@ -86,7 +85,7 @@ const TreatmentsSection = () => {
                   <ul className="space-y-1">
                     {treatment.benefits.map((benefit, i) => (
                       <li key={i} className="flex items-center text-sm text-gray-600">
-                        <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span>
+                        <span className="w-1.5 h-1.5 bg-pink-400 rounded-full mr-2"></span>
                         {benefit}
                       </li>
                     ))}
