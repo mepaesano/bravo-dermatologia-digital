@@ -16,10 +16,10 @@ const HeroSection = () => {
             
             <h2 className="text-4xl md:text-5xl font-light text-gris-muy-oscuro mb-8 leading-tight">
               Dermatología Estética
-              <span className="block text-rosa-coral font-normal">donde se realza tu belleza natural</span>
+              <span className="block text-rosa-coral font-normal">Tu piel, nuestra especialidad.</span>
             </h2>
             
-            <p className="text-xl text-gris-oscuro mb-12 max-w-2xl mx-auto font-light leading-relaxed">Cada piel es única. Cada tratamiento, también. En nuestro consultorio, la estética se cuida con ciencia y sensibilidad.</p>
+            <p className="text-xl text-gris-oscuro mb-12 max-w-2xl mx-auto font-light leading-relaxed">Un abordaje personalizado que combina ciencia, armonía y bienestar.</p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button onClick={() => scrollToSection('turnos')} className="bg-rosa-coral text-blanco px-12 py-4 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg">
