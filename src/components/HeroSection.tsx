@@ -15,8 +15,8 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-16">
             <img 
-              src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-              alt="Cuidado dermatológico profesional" 
+              src="/lovable-uploads/c986d3df-aa2c-4921-9930-e556d8bf80b7.png" 
+              alt="Dra. Daniela Bravo - Logo" 
               className="w-80 h-80 mx-auto rounded-full object-cover mb-12 shadow-lg"
             />
             
