@@ -73,11 +73,19 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-blanco-nieve text-gris-paloma font-sans;
     scroll-behavior: smooth;
+    font-weight: 300;
   }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Suavizar todas las transiciones */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
