@@ -29,7 +29,7 @@ const TreatmentsSection = () => {
     },
     {
       title: "Criocirugía",
-      description: "Tratamiento con frío para eliminar lesiones benignas de la piel."
+      description: "Tratamiento con frío para eliminar lesiones tanto benignas como malignas de la piel."
     },
     {
       title: "Dermatoscopía",
@@ -43,7 +43,7 @@ const TreatmentsSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-light text-gris-muy-oscuro mb-6">Tratamientos</h2>
-            <p className="text-xl text-gris-oscuro font-light">
+            <p className="text-xl text-gris-muy-oscuro font-light">
               Cada tratamiento es personalizado según tus necesidades específicas
             </p>
           </div>
@@ -55,7 +55,7 @@ const TreatmentsSection = () => {
                 className="bg-blanco-calido p-8 rounded-2xl border border-rosa-empolvado hover:shadow-md transition-shadow duration-300"
               >
                 <h3 className="text-xl font-medium text-gris-muy-oscuro mb-4">{treatment.title}</h3>
-                <p className="text-gris-oscuro font-light leading-relaxed">{treatment.description}</p>
+                <p className="text-gris-muy-oscuro font-light leading-relaxed">{treatment.description}</p>
               </div>
             ))}
           </div>
