@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const AppointmentSection = () => {
   const openWhatsApp = (phoneNumber: string, location: string) => {
-    const message = encodeURIComponent(`Hola, me gustaría solicitar un turno en ${location}`);
+    const message = encodeURIComponent(`Hola, me gustaría solicitar un turno en ${location} con la Dra. Bravo`);
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 
