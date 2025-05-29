@@ -47,7 +47,7 @@ const Header = () => {
               onClick={() => scrollToSection('contacto')} 
               className="text-gris-oscuro hover:text-rosa-coral transition-colors font-light"
             >
-              Contacto
+              Consultorios
             </button>
           </nav>
 
@@ -86,7 +86,7 @@ const Header = () => {
                 onClick={() => scrollToSection('contacto')} 
                 className="text-gris-oscuro hover:text-rosa-coral transition-colors font-light py-2"
               >
-                Contacto
+                Consultorios
               </button>
             </div>
           </nav>

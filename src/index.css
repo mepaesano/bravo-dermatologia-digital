@@ -76,6 +76,15 @@
     @apply bg-blanco-calido text-gris-oscuro font-sans;
     scroll-behavior: smooth;
     font-weight: 300;
+    line-height: 1.6;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .leading-relaxed {
+    line-height: 1.6;
   }
 }
 
