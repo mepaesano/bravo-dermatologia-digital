@@ -11,7 +11,7 @@ const TreatmentsSection = () => {
     {
       title: "Mesoterapia Facial y Capilar",
       description: "Microinyecciones de principios activos que revitalizan la piel y estimulan el crecimiento capilar. Técnica eficaz, segura y poco invasiva.",
-      image: "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      image: "/lovable-uploads/9b0582e5-9635-4d75-b1fc-d234bf70d989.png"
     },
     {
       title: "Bioestimulación Facial",
