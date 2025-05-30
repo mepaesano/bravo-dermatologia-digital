@@ -1,4 +1,6 @@
+
 import React from 'react';
+
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -8,11 +10,17 @@ const HeroSection = () => {
       });
     }
   };
-  return <section id="inicio" className="bg-blanco-calido">
+
+  return (
+    <section id="inicio" className="bg-blanco-calido">
       <div className="container mx-auto px-6 py-24">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-16">
-            <img src="/lovable-uploads/c986d3df-aa2c-4921-9930-e556d8bf80b7.png" alt="Dra. Daniela Bravo - Logo" className="w-80 h-80 mx-auto rounded-full object-cover mb-12 shadow-lg" />
+            <img 
+              src="/lovable-uploads/87b0316a-aa5c-4bdd-bd9e-f23011b995a1.png" 
+              alt="Dra. Daniela Bravo - Logo" 
+              className="w-80 h-80 mx-auto rounded-full object-cover mb-12 shadow-lg" 
+            />
             
             <h2 className="text-4xl md:text-5xl font-light text-gris-muy-oscuro mb-8 leading-tight">
               Dermatología Estética
@@ -32,6 +40,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
