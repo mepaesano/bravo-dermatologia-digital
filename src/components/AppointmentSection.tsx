@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { MessageCircle } from 'lucide-react';
 
 const AppointmentSection = () => {
   const openWhatsApp = (phoneNumber: string, location: string) => {
@@ -26,9 +28,10 @@ const AppointmentSection = () => {
               </div>
               <button 
                 onClick={() => openWhatsApp('5491133681890', 'Vicente López')}
-                className="w-full bg-rosa-coral text-blanco px-6 py-3 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="w-full bg-rosa-coral text-blanco px-6 py-3 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
               >
-                💬 Reservar por WhatsApp
+                <MessageCircle size={18} className="text-white" />
+                Reservar por WhatsApp
               </button>
             </div>
             
@@ -40,9 +43,10 @@ const AppointmentSection = () => {
               </div>
               <button 
                 onClick={() => openWhatsApp('5491176546995', 'Capilla del Señor')}
-                className="w-full bg-rosa-coral text-blanco px-6 py-3 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="w-full bg-rosa-coral text-blanco px-6 py-3 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
               >
-                💬 Reservar por WhatsApp
+                <MessageCircle size={18} className="text-white" />
+                Reservar por WhatsApp
               </button>
             </div>
           </div>
