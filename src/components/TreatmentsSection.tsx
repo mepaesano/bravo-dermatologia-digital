@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const TreatmentsSection = () => {
@@ -6,7 +5,7 @@ const TreatmentsSection = () => {
     {
       title: "PRP (Plasma Rico en Plaquetas) – Facial y Capilar",
       description: "Estimula la regeneración celular y mejora la calidad de la piel y del cuero cabelludo. Se aplica para tratar envejecimiento cutáneo, flacidez y caída del cabello.",
-      image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      image: "/lovable-uploads/deb698f4-52a8-4703-bc6c-4fa84db26863.png"
     },
     {
       title: "Mesoterapia Facial y Capilar",
