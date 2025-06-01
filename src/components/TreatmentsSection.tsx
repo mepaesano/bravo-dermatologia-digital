@@ -35,17 +35,17 @@ const TreatmentsSection = () => {
     {
       title: "Mesolifting",
       description: "Combinación de vitaminas y antioxidantes para un efecto lifting natural.",
-      image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      image: "/lovable-uploads/e083de57-8c25-4fad-99d3-a0dce7648ffb.png"
     },
     {
       title: "Criocirugía",
       description: "Tratamiento con frío para eliminar lesiones tanto benignas como malignas de la piel.",
-      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      image: "/lovable-uploads/183df9c3-3a87-4def-9297-bc265dfa8fa7.png"
     },
     {
       title: "Dermatoscopía",
       description: "Examen detallado de lunares y lesiones para detección temprana.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      image: "/lovable-uploads/2b013886-941f-4b58-8294-820f763935a6.png"
     },
   ];
 
