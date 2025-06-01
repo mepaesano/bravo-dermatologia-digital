@@ -15,15 +15,15 @@ const AboutSection = () => {
               
               <div className="space-y-6 text-gris-oscuro font-light leading-relaxed">
                 <p>
-                  La Dra. Daniela Bravo es médica egresada de la Universidad de Buenos Aires (UBA) y especialista en Dermatología, formación que completó en el Hospital Dr. Houssay de Vicente López, donde también trabajó durante varios años.
+                  Daniela Bravo es médica egresada de la Universidad de Buenos Aires (UBA) y especialista en Dermatología, formación que completó en el Hospital Dr. Houssay de Vicente López, donde también ejerció durante varios años.
                 </p>
                 
                 <p>
-                  Es miembro de la Sociedad Argentina de Dermatología y ha realizado múltiples cursos de posgrado en dermatología clínica y estética.
+                  Es miembro de la Sociedad Argentina de Dermatología y ha realizado múltiples cursos de posgrado en dermatología clínica y estética, manteniéndose en constante actualización.
                 </p>
                 
                 <p>
-                  A lo largo de su carrera, se ha dedicado al cuidado integral de la piel, combinando ciencia, actualización constante y una atención cálida y cercana. Educa a sus pacientes, derriba mitos comunes y promueve hábitos saludables basados en evidencia.
+                  A lo largo de su carrera, se ha dedicado al cuidado integral de la piel, combinando ciencia, experiencia y una atención cercana. Acompaña a sus pacientes con información clara, desmitificando creencias y promoviendo hábitos saludables basados en evidencia.
                 </p>
               </div>
             </div>
