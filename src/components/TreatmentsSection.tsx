@@ -20,17 +20,17 @@ const TreatmentsSection = () => {
     {
       title: "Toxina Botulínica (Botox)",
       description: "Tratamiento para suavizar arrugas de expresión y prevenir líneas futuras.",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      image: "/lovable-uploads/c30640c7-f0dc-4c13-8453-0c2674278869.png"
     },
     {
       title: "Rellenos Dérmicos",
       description: "Corrección de surcos y aumento de volumen con ácido hialurónico.",
-      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      image: "/lovable-uploads/895e3ba1-baf9-42d3-bf68-830dcd2343ed.png"
     },
     {
       title: "Peelings Químicos",
       description: "Exfoliación controlada para renovar la piel y mejorar su textura.",
-      image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      image: "/lovable-uploads/db89a893-3442-417d-a37c-ab1caea791df.png"
     },
     {
       title: "Mesolifting",
