@@ -10,20 +10,24 @@ const AboutSection = () => {
             {/* Texto a la izquierda */}
             <div className="lg:order-1 order-2">
               <h2 className="text-4xl font-light text-gris-muy-oscuro mb-8">
-                Sobre la Dra. Daniela Bravo
+                Sobre la Dra. Daniela Bravo - Dermatóloga en Vicente López
               </h2>
               
               <div className="space-y-6 text-gris-oscuro font-light leading-relaxed">
                 <p>
-                  Daniela Bravo es médica egresada de la Universidad de Buenos Aires (UBA) y especialista en Dermatología, formación que completó en el Hospital Dr. Houssay de Vicente López, donde también ejerció durante varios años.
+                  <strong>Daniela Bravo</strong> es médica egresada de la Universidad de Buenos Aires (UBA) y <strong>especialista en Dermatología</strong>, formación que completó en el Hospital Dr. Houssay de Vicente López, donde también ejerció durante varios años como dermatóloga.
                 </p>
                 
                 <p>
-                  Es miembro de la Sociedad Argentina de Dermatología y ha realizado múltiples cursos de posgrado en dermatología clínica y estética, manteniéndose en constante actualización.
+                  Es miembro de la <strong>Sociedad Argentina de Dermatología</strong> y ha realizado múltiples cursos de posgrado en <strong>dermatología clínica y estética</strong>, manteniéndose en constante actualización en las últimas técnicas de tratamientos dermatológicos y estéticos.
                 </p>
                 
                 <p>
-                  A lo largo de su carrera, se ha dedicado al cuidado integral de la piel, combinando ciencia, experiencia y una atención cercana. Acompaña a sus pacientes con información clara, desmitificando creencias y promoviendo hábitos saludables basados en evidencia.
+                  A lo largo de su carrera como <strong>dermatóloga en Vicente López</strong>, se ha dedicado al cuidado integral de la piel, combinando ciencia, experiencia y una atención cercana. Acompaña a sus pacientes con información clara, desmitificando creencias y promoviendo hábitos saludables basados en evidencia científica.
+                </p>
+
+                <p>
+                  Su <strong>centro estético en Vicente López</strong> ofrece un abordaje personalizado que integra los tratamientos más modernos de <strong>dermatología estética</strong>, siempre priorizando la seguridad y los resultados naturales.
                 </p>
               </div>
             </div>
@@ -33,7 +37,7 @@ const AboutSection = () => {
               <div className="w-80 h-80 rounded-3xl overflow-hidden shadow-lg bg-rosa-empolvado/20">
                 <img 
                   src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Dra. Daniela Bravo - Especialista en Dermatología" 
+                  alt="Dra. Daniela Bravo - Especialista en Dermatología y Estética en Vicente López" 
                   className="w-full h-full object-cover"
                 />
               </div>
