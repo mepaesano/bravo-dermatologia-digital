@@ -16,7 +16,7 @@ const TreatmentsSection = () => {
     {
       title: "Bioestimulación Facial - Rejuvenecimiento Natural",
       description: "Tratamiento no invasivo que activa los procesos naturales de regeneración cutánea. Estimula la producción de colágeno y elastina, mejorando la textura, firmeza y luminosidad de la piel. Resultados graduales y naturales para un rostro renovado.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      image: "/lovable-uploads/9fc54570-1151-45db-994f-5126dd8a216d.png"
     },
     {
       title: "Toxina Botulínica (Botox) en Vicente López",
