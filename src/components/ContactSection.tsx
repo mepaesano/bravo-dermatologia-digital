@@ -55,14 +55,18 @@ const ContactSection = () => {
                 className="w-full"
                 plugins={[
                   Autoplay({
-                    delay: 4000,
-                    stopOnInteraction: true,
-                    stopOnMouseEnter: true
+                    delay: 3000,
+                    stopOnInteraction: false,
+                    stopOnMouseEnter: false,
+                    stopOnLastSnap: false,
+                    playOnInit: true
                   })
                 ]}
                 opts={{
                   align: "start",
                   loop: true,
+                  skipSnaps: false,
+                  dragFree: false
                 }}
               >
                 <CarouselContent>
