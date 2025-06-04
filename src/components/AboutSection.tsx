@@ -3,17 +3,17 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="bg-blanco-calido border-t border-rosa-empolvado py-24">
-      <div className="container mx-auto px-6">
+    <section id="sobre" className="bg-blanco-calido border-t border-rosa-empolvado py-16 md:py-24">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Texto a la izquierda */}
             <div className="lg:order-1 order-2">
-              <h2 className="text-4xl font-light text-gris-muy-oscuro mb-8">
+              <h2 className="text-3xl md:text-4xl font-light text-gris-muy-oscuro mb-6 md:mb-8">
                 Sobre la Dra. Daniela Bravo - Dermatóloga en Vicente López
               </h2>
               
-              <div className="space-y-6 text-gris-oscuro font-light leading-relaxed">
+              <div className="space-y-4 md:space-y-6 text-gris-oscuro font-light leading-relaxed">
                 <p>
                   <strong>Daniela Bravo</strong> es médica egresada de la Universidad de Buenos Aires (UBA) y <strong>especialista en Dermatología</strong>, formación que completó en el Hospital Dr. Houssay de Vicente López, donde también ejerció durante varios años como dermatóloga.
                 </p>
@@ -34,11 +34,15 @@ const AboutSection = () => {
 
             {/* Imagen a la derecha */}
             <div className="lg:order-2 order-1 flex justify-center">
-              <div className="w-80 h-80 rounded-3xl overflow-hidden shadow-lg bg-rosa-empolvado/20">
+              <div className="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-lg bg-rosa-empolvado/20">
                 <img 
                   src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Dra. Daniela Bravo - Especialista en Dermatología y Estética en Vicente López" 
+                  alt="Dra. Daniela Bravo especialista dermatología estética Vicente López consultorio médico" 
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width="320"
+                  height="320"
                 />
               </div>
             </div>

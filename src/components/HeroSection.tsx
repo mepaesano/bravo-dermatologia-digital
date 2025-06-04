@@ -13,33 +13,43 @@ const HeroSection = () => {
 
   return (
     <section id="inicio" className="bg-blanco-calido">
-      <div className="container mx-auto px-6 py-24">
+      <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-16">
+          <div className="mb-12 md:mb-16">
             <img 
               src="/lovable-uploads/87b0316a-aa5c-4bdd-bd9e-f23011b995a1.png" 
-              alt="Dra. Daniela Bravo - Dermatóloga Vicente López" 
-              className="w-80 h-80 mx-auto rounded-full object-cover mb-12 shadow-lg" 
+              alt="Dra. Daniela Bravo dermatóloga especialista Vicente López centro estético" 
+              className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full object-cover mb-8 md:mb-12 shadow-lg" 
+              loading="eager"
+              decoding="async"
+              width="320"
+              height="320"
             />
             
-            <h1 className="text-4xl md:text-5xl font-light text-gris-muy-oscuro mb-8 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gris-muy-oscuro mb-6 md:mb-8 leading-tight">
               Dra. Daniela Bravo
-              <span className="block text-rosa-coral font-normal">Dermatóloga Especialista en Vicente López</span>
+              <span className="block text-rosa-coral font-normal mt-2">Dermatóloga Especialista en Vicente López</span>
             </h1>
             
-            <h2 className="text-2xl md:text-3xl font-light text-gris-oscuro mb-8">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-light text-gris-oscuro mb-6 md:mb-8">
               Centro de Dermatología y Estética
             </h2>
             
-            <p className="text-xl text-gris-oscuro mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+            <p className="text-lg md:text-xl text-gris-oscuro mb-8 md:mb-12 max-w-3xl mx-auto font-light leading-relaxed px-4">
               Especialista en dermatología clínica y estética. Tratamientos de botox, mesoterapia, PRP facial, rellenos dérmicos y peelings químicos en Vicente López. Tu piel, nuestra especialidad.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button onClick={() => scrollToSection('turnos')} className="bg-rosa-coral text-blanco px-12 py-4 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center px-4">
+              <button 
+                onClick={() => scrollToSection('turnos')} 
+                className="bg-rosa-coral text-blanco px-8 md:px-12 py-3 md:py-4 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg text-sm md:text-base"
+              >
                 Reservar Turno Online
               </button>
-              <button onClick={() => scrollToSection('tratamientos')} className="border-2 border-rosa-empolvado text-gris-oscuro px-12 py-4 rounded-full font-medium hover:bg-rosa-coral hover:text-blanco hover:border-rosa-coral transition-all duration-300">
+              <button 
+                onClick={() => scrollToSection('tratamientos')} 
+                className="border-2 border-rosa-empolvado text-gris-oscuro px-8 md:px-12 py-3 md:py-4 rounded-full font-medium hover:bg-rosa-coral hover:text-blanco hover:border-rosa-coral transition-all duration-300 text-sm md:text-base"
+              >
                 Ver Tratamientos Dermatológicos
               </button>
             </div>
