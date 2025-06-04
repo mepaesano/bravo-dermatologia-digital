@@ -1,14 +1,6 @@
 
 import React from 'react';
 import { Instagram, MapPin, Star } from 'lucide-react';
-import Autoplay from "embla-carousel-autoplay";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
 
 const ContactSection = () => {
   const consultorioImages = [
@@ -31,8 +23,15 @@ const ContactSection = () => {
     {
       src: "/lovable-uploads/d829981e-36e1-4cae-9f55-5ee5ae983cf0.png",
       alt: "Pasillo centro médico Vicente López - instalaciones modernas dermatología"
+    },
+    {
+      src: "/lovable-uploads/297cde49-b6d1-45aa-8e36-c79961c785f1.png",
+      alt: "Consultorio dermatológico moderno - vista de la sala de consulta"
     }
   ];
+
+  // Duplicamos las imágenes para crear el efecto infinito
+  const duplicatedImages = [...consultorioImages, ...consultorioImages];
 
   return (
     <section id="contacto" className="bg-blanco border-t border-rosa-empolvado py-24">
@@ -45,50 +44,35 @@ const ContactSection = () => {
             </p>
           </div>
 
-          {/* Carrusel de imágenes de consultorios */}
+          {/* Carousel infinito personalizado */}
           <div className="mb-16">
             <h3 className="text-2xl font-light text-gris-muy-oscuro mb-8 text-center">
               Conocé nuestras instalaciones
             </h3>
-            <div className="max-w-4xl mx-auto">
-              <Carousel 
-                className="w-full"
-                plugins={[
-                  Autoplay({
-                    delay: 3000,
-                    stopOnInteraction: false,
-                    stopOnMouseEnter: false,
-                    stopOnLastSnap: false,
-                    playOnInit: true
-                  })
-                ]}
-                opts={{
-                  align: "start",
-                  loop: true,
-                  skipSnaps: false,
-                  dragFree: false
-                }}
-              >
-                <CarouselContent>
-                  {consultorioImages.map((image, index) => (
-                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                      <div className="p-2">
-                        <div className="bg-blanco-calido border border-rosa-empolvado rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                          <img
-                            src={image.src}
-                            alt={image.alt}
-                            className="w-full h-64 object-cover"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </div>
+            <div className="max-w-5xl mx-auto overflow-hidden">
+              <div className="relative">
+                <div 
+                  className="flex animate-scroll-infinite"
+                  style={{
+                    width: `${duplicatedImages.length * 320}px`,
+                    animationDuration: '30s'
+                  }}
+                >
+                  {duplicatedImages.map((image, index) => (
+                    <div key={index} className="flex-shrink-0 w-80 px-3">
+                      <div className="bg-blanco-calido border border-rosa-empolvado rounded-3xl overflow-hidden shadow-sm">
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-64 object-cover"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </div>
-                    </CarouselItem>
+                    </div>
                   ))}
-                </CarouselContent>
-                <CarouselPrevious className="border-rosa-empolvado text-rosa-coral hover:bg-rosa-coral hover:text-blanco" />
-                <CarouselNext className="border-rosa-empolvado text-rosa-coral hover:bg-rosa-coral hover:text-blanco" />
-              </Carousel>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -159,6 +143,21 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes scroll-infinite {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-${consultorioImages.length * 320}px);
+          }
+        }
+        
+        .animate-scroll-infinite {
+          animation: scroll-infinite 30s linear infinite;
+        }
+      `}</style>
     </section>
   );
 };
