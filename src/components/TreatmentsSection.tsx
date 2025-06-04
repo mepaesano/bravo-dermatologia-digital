@@ -1,11 +1,10 @@
-
 import React from 'react';
 
 const TreatmentsSection = () => {
   const treatments = [
     {
       title: "PRP (Plasma Rico en Plaquetas) – Facial y Capilar",
-      description: "Tratamiento de medicina regenerativa que utiliza plasma rico en plaquetas del propio paciente. Estimula la regeneración celular, mejora la calidad de la piel y trata la caída del cabello. Ideal para rejuvenecimiento facial natural y fortalecimiento capilar en Vicente López.",
+      description: "Tratamiento de medicina regenerativa que utiliza plasma rico en plaquetas del propio paciente. Estimula la regeneración celular, mejora la calidad de la piel y trata la caída del cabello. Ideal para rejuvenecimiento facial natural y fortalecimiento capilar.",
       image: "/lovable-uploads/deb698f4-52a8-4703-bc6c-4fa84db26863.png"
     },
     {
