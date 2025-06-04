@@ -1,8 +1,38 @@
 
 import React from 'react';
 import { Instagram, MapPin, Star } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
 
 const ContactSection = () => {
+  const consultorioImages = [
+    {
+      src: "/lovable-uploads/0623be76-fb61-476c-a8d7-edce4f2bd8af.png",
+      alt: "Consultorio dermatología Vicente López - sala de consulta moderna con escritorio blanco"
+    },
+    {
+      src: "/lovable-uploads/b87e7768-e5c3-4ec7-9140-94251e8c08ce.png", 
+      alt: "Consultorio dermatológico Vicente López - equipamiento médico especializado"
+    },
+    {
+      src: "/lovable-uploads/e68cd1e7-ad01-450c-8543-3c23bf4d3570.png",
+      alt: "Recepción centro dermatológico Vicente López - sala de espera moderna"
+    },
+    {
+      src: "/lovable-uploads/45d8ee2a-dde6-48d9-b805-6664381690b3.png",
+      alt: "Consultorio Dra. Daniela Bravo - diplomas y certificaciones dermatología"
+    },
+    {
+      src: "/lovable-uploads/d829981e-36e1-4cae-9f55-5ee5ae983cf0.png",
+      alt: "Pasillo centro médico Vicente López - instalaciones modernas dermatología"
+    }
+  ];
+
   return (
     <section id="contacto" className="bg-blanco border-t border-rosa-empolvado py-24">
       <div className="container mx-auto px-6">
@@ -12,6 +42,36 @@ const ContactSection = () => {
             <p className="text-xl text-gris-oscuro font-light leading-relaxed">
               Nuestros consultorios están ubicados estratégicamente para tu comodidad
             </p>
+          </div>
+
+          {/* Carrusel de imágenes de consultorios */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-light text-gris-muy-oscuro mb-8 text-center">
+              Conocé nuestras instalaciones
+            </h3>
+            <div className="max-w-4xl mx-auto">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {consultorioImages.map((image, index) => (
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                      <div className="p-2">
+                        <div className="bg-blanco-calido border border-rosa-empolvado rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                          <img
+                            src={image.src}
+                            alt={image.alt}
+                            className="w-full h-64 object-cover"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="border-rosa-empolvado text-rosa-coral hover:bg-rosa-coral hover:text-blanco" />
+                <CarouselNext className="border-rosa-empolvado text-rosa-coral hover:bg-rosa-coral hover:text-blanco" />
+              </Carousel>
+            </div>
           </div>
 
           {/* Responsive grid - side by side on desktop, stacked on mobile */}
