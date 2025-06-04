@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Instagram, MapPin, Star } from 'lucide-react';
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
@@ -50,7 +51,20 @@ const ContactSection = () => {
               Conocé nuestras instalaciones
             </h3>
             <div className="max-w-4xl mx-auto">
-              <Carousel className="w-full">
+              <Carousel 
+                className="w-full"
+                plugins={[
+                  Autoplay({
+                    delay: 4000,
+                    stopOnInteraction: true,
+                    stopOnMouseEnter: true
+                  })
+                ]}
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+              >
                 <CarouselContent>
                   {consultorioImages.map((image, index) => (
                     <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
