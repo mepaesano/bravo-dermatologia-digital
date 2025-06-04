@@ -1,7 +1,10 @@
+
 import React from 'react';
-import { Instagram, MapPin } from 'lucide-react';
+import { Instagram, MapPin, Star } from 'lucide-react';
+
 const ContactSection = () => {
-  return <section id="contacto" className="bg-blanco border-t border-rosa-empolvado py-24">
+  return (
+    <section id="contacto" className="bg-blanco border-t border-rosa-empolvado py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -52,15 +55,34 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Instagram link */}
-          <div className="text-center mt-12">
-            <a href="https://instagram.com/dradanielabravo" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-rosa-coral hover:text-rosa-coral/80 transition-colors font-light">
-              <Instagram className="w-5 h-5 mr-2" />
-              @dradanielabravo
-            </a>
+          {/* Social links and reviews */}
+          <div className="text-center mt-12 space-y-4">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+              <a 
+                href="https://instagram.com/dradanielabravo" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center text-rosa-coral hover:text-rosa-coral/80 transition-colors font-light"
+              >
+                <Instagram className="w-5 h-5 mr-2" />
+                @dradanielabravo
+              </a>
+              
+              <a 
+                href="https://g.page/r/CdU3EFvTpSBxEBM/review" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center text-rosa-coral hover:text-rosa-coral/80 transition-colors font-light"
+              >
+                <Star className="w-5 h-5 mr-2" />
+                Dejanos tu reseña en Google
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ContactSection;
