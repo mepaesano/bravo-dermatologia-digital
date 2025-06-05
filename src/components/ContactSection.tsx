@@ -52,10 +52,10 @@ const ContactSection = () => {
             <div className="max-w-5xl mx-auto overflow-hidden">
               <div className="relative">
                 <div 
-                  className="flex animate-scroll-infinite"
+                  className="flex"
                   style={{
                     width: `${duplicatedImages.length * 320}px`,
-                    animationDuration: '30s'
+                    animation: 'scroll-infinite 30s linear infinite'
                   }}
                 >
                   {duplicatedImages.map((image, index) => (
@@ -144,20 +144,18 @@ const ContactSection = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes scroll-infinite {
-          0% {
-            transform: translateX(0);
+      <style>
+        {`
+          @keyframes scroll-infinite {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-${consultorioImages.length * 320}px);
+            }
           }
-          100% {
-            transform: translateX(-${consultorioImages.length * 320}px);
-          }
-        }
-        
-        .animate-scroll-infinite {
-          animation: scroll-infinite 30s linear infinite;
-        }
-      `}</style>
+        `}
+      </style>
     </section>
   );
 };

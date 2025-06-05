@@ -1,15 +1,33 @@
 
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    setIsMenuOpen(false);
+  };
+
+  const navigateToTurnos = () => {
+    navigate('/turnos');
     setIsMenuOpen(false);
   };
 
@@ -18,7 +36,10 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="flex-1 md:flex-none text-center md:text-left">
-            <h1 className="text-2xl md:text-3xl font-light text-gris-muy-oscuro tracking-wide">
+            <h1 
+              className="text-2xl md:text-3xl font-light text-gris-muy-oscuro tracking-wide cursor-pointer"
+              onClick={() => navigate('/')}
+            >
               Dra. Daniela Bravo
             </h1>
           </div>
@@ -44,13 +65,13 @@ const Header = () => {
               Tratamientos
             </button>
             <button 
-              onClick={() => scrollToSection('turnos')} 
+              onClick={navigateToTurnos} 
               className="text-gris-oscuro hover:text-rosa-coral transition-colors font-light"
             >
               Turnos
             </button>
             <button 
-              onClick={() => scrollToSection('contacto')} 
+              onClick={navigateToTurnos} 
               className="text-gris-oscuro hover:text-rosa-coral transition-colors font-light"
             >
               Consultorios
@@ -89,13 +110,13 @@ const Header = () => {
                 Tratamientos
               </button>
               <button 
-                onClick={() => scrollToSection('turnos')} 
+                onClick={navigateToTurnos} 
                 className="text-gris-oscuro hover:text-rosa-coral transition-colors font-light py-2"
               >
                 Turnos
               </button>
               <button 
-                onClick={() => scrollToSection('contacto')} 
+                onClick={navigateToTurnos} 
                 className="text-gris-oscuro hover:text-rosa-coral transition-colors font-light py-2"
               >
                 Consultorios
