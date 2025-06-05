@@ -15,7 +15,9 @@ const Turnos = () => {
       <Header />
       <main>
         <AppointmentSection />
-        <ContactSection />
+        <div id="consultorios">
+          <ContactSection />
+        </div>
       </main>
       <Footer />
     </div>

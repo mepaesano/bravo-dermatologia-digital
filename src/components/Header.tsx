@@ -28,6 +28,20 @@ const Header = () => {
 
   const navigateToTurnos = () => {
     navigate('/turnos');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+    setIsMenuOpen(false);
+  };
+
+  const navigateToConsultorios = () => {
+    navigate('/turnos');
+    setTimeout(() => {
+      const element = document.getElementById('consultorios');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
     setIsMenuOpen(false);
   };
 
@@ -71,7 +85,7 @@ const Header = () => {
               Turnos
             </button>
             <button 
-              onClick={navigateToTurnos} 
+              onClick={navigateToConsultorios} 
               className="text-gris-oscuro hover:text-rosa-coral transition-colors font-light"
             >
               Consultorios
@@ -116,7 +130,7 @@ const Header = () => {
                 Turnos
               </button>
               <button 
-                onClick={navigateToTurnos} 
+                onClick={navigateToConsultorios} 
                 className="text-gris-oscuro hover:text-rosa-coral transition-colors font-light py-2"
               >
                 Consultorios

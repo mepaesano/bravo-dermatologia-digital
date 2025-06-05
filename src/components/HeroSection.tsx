@@ -1,7 +1,10 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -9,6 +12,13 @@ const HeroSection = () => {
         behavior: 'smooth'
       });
     }
+  };
+
+  const navigateToTurnos = () => {
+    navigate('/turnos');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
   };
 
   return (
@@ -41,7 +51,7 @@ const HeroSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center px-4">
               <button 
-                onClick={() => scrollToSection('turnos')} 
+                onClick={navigateToTurnos} 
                 className="bg-rosa-coral text-blanco px-8 md:px-12 py-3 md:py-4 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg text-sm md:text-base"
               >
                 Reservar Turno Online
