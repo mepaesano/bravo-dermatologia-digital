@@ -34,7 +34,7 @@ const HeroSection = () => {
               decoding="async"
               width="320"
               height="320"
-              fetchpriority="high"
+              fetchPriority="high"
             />
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gris-muy-oscuro mb-6 md:mb-8 leading-tight">
@@ -47,7 +47,7 @@ const HeroSection = () => {
             </h2>
             
             <p className="text-lg md:text-xl text-gris-oscuro mb-8 md:mb-12 max-w-3xl mx-auto font-light leading-relaxed px-4">
-              Especialista en <strong>dermatología clínica y estética</strong>. Tratamientos de <strong>botox, mesoterapia, PRP facial, rellenos dérmicos y peelings químicos en Vicente López</strong>. Tu piel, nuestra especialidad.
+              Especialista en <strong>dermatología clínica y estética</strong>. Tratamientos de <strong>toxina botulínica, mesoterapia, PRP facial, rellenos dérmicos y peelings químicos en Vicente López</strong>. Tu piel, nuestra especialidad.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center px-4">

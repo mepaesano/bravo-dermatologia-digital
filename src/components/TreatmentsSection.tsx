@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const TreatmentsSection = () => {
@@ -22,10 +21,10 @@ const TreatmentsSection = () => {
       alt: "Bioestimulación facial para producción de colágeno y elastina, rejuvenecimiento natural en Vicente López"
     },
     {
-      title: "Toxina Botulínica (Botox) en Vicente López",
+      title: "Toxina Botulínica en Vicente López",
       description: "Aplicación profesional de toxina botulínica para suavizar arrugas de expresión y prevenir líneas futuras. Tratamiento seguro y efectivo para frente, entrecejo y patas de gallo. Resultados naturales que respetan la expresión facial.",
       image: "/lovable-uploads/c30640c7-f0dc-4c13-8453-0c2674278869.png",
-      alt: "Aplicación de Botox y toxina botulínica en Vicente López para arrugas de expresión, frente y entrecejo"
+      alt: "Aplicación de toxina botulínica en Vicente López para arrugas de expresión, frente y entrecejo"
     },
     {
       title: "Rellenos Dérmicos con Ácido Hialurónico",
