@@ -50,12 +50,16 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="flex-1 md:flex-none text-center md:text-left">
-            <h1 
-              className="text-2xl md:text-3xl font-light text-gris-muy-oscuro tracking-wide cursor-pointer"
+            <div 
+              className="cursor-pointer flex justify-center md:justify-start"
               onClick={() => navigate('/')}
             >
-              Dra. Daniela Bravo
-            </h1>
+              <img 
+                src="/lovable-uploads/ae1567a4-9f17-4e47-8bbc-987dcd747ac0.png" 
+                alt="Dra. Daniela Bravo - Dermatóloga Vicente López" 
+                className="h-12 w-12 rounded-full object-cover"
+              />
+            </div>
           </div>
 
           {/* Desktop Navigation */}
