@@ -34,15 +34,13 @@ const AboutSection = () => {
 
             {/* Imagen a la derecha */}
             <div className="lg:order-2 order-1 flex justify-center">
-              <div className="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-lg bg-rosa-empolvado/20">
+              <div className="rounded-3xl overflow-hidden shadow-lg bg-rosa-empolvado/20">
                 <img 
-                  src="/lovable-uploads/20e7fc5f-2ab3-4af6-a999-fa38571dc50d.png" 
+                  src="/lovable-uploads/93a76c5c-7129-421e-a548-62cade32065f.png" 
                   alt="Dra. Daniela Bravo especialista dermatología estética Vicente López" 
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-auto"
                   loading="lazy"
                   decoding="async"
-                  width="320"
-                  height="320"
                 />
               </div>
             </div>
