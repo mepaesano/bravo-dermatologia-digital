@@ -15,7 +15,7 @@ const AboutSection = () => {
               
               <div className="space-y-4 md:space-y-6 text-gris-oscuro font-light leading-relaxed">
                 <p>
-                  <strong>Daniela Bravo</strong> es médica egresada de la Universidad de Buenos Aires (UBA) y <strong>especialista en Dermatología</strong>, formación que completó en el Hospital Dr. Houssay de Vicente López, donde también ejerció durante varios años como dermatóloga.
+                  <strong>Daniela Bravo</strong> es médica egresada de la <strong>Universidad de Buenos Aires (UBA)</strong> y <strong>especialista en Dermatología</strong>, formación que completó en el Hospital Dr. Houssay de Vicente López, donde también ejerció durante varios años como dermatóloga.
                 </p>
                 
                 <p>
@@ -37,10 +37,12 @@ const AboutSection = () => {
               <div className="w-80 h-96 md:w-96 md:h-[28rem] rounded-3xl overflow-hidden shadow-lg bg-rosa-empolvado/20">
                 <img 
                   src="/lovable-uploads/93a76c5c-7129-421e-a548-62cade32065f.png" 
-                  alt="Dra. Daniela Bravo especialista dermatología estética Vicente López" 
+                  alt="Dra. Daniela Bravo, especialista en dermatología estética en Vicente López, en su consultorio médico" 
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
+                  width="384"
+                  height="448"
                 />
               </div>
             </div>

@@ -50,36 +50,143 @@
     <meta name="geo.position" content="-34.5317;-58.4724" />
     <meta name="ICBM" content="-34.5317, -58.4724" />
     
-    <!-- Schema.org structured data -->
+    <!-- Schema.org LocalBusiness structured data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MedicalOrganization",
-      "name": "Dra. Daniela Bravo - Dermatología y Estética",
+      "@type": "LocalBusiness",
+      "@id": "https://dradanielabravo.com",
+      "name": "Dra. Daniela Bravo - Dermatología Estética",
+      "alternateName": "Centro Dermatológico Dra. Daniela Bravo",
+      "description": "Especialista en dermatología clínica y estética en Vicente López. Tratamientos de botox, mesoterapia, PRP facial, rellenos dérmicos y peelings químicos.",
       "url": "https://dradanielabravo.com",
       "logo": "https://dradanielabravo.com/lovable-uploads/87b0316a-aa5c-4bdd-bd9e-f23011b995a1.png",
-      "description": "Centro dermatológico especializado en dermatología clínica y estética en Vicente López",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Av. Maipú 1651, Piso 2",
-        "addressLocality": "Vicente López",
-        "addressRegion": "Buenos Aires",
-        "addressCountry": "AR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -34.5317,
-        "longitude": -58.4724
-      },
-      "telephone": "+54-11-3368-1890",
+      "image": "https://dradanielabravo.com/lovable-uploads/59f3c988-666d-4024-a417-3c5b3013dae4.png",
       "priceRange": "$$",
-      "medicalSpecialty": "Dermatology"
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios Dermatológicos",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Toxina Botulínica (Botox)",
+              "description": "Tratamiento para suavizar arrugas de expresión"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mesoterapia Facial",
+              "description": "Revitalización facial con microinyecciones"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "PRP Facial",
+              "description": "Plasma Rico en Plaquetas para rejuvenecimiento"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Rellenos Dérmicos",
+              "description": "Ácido hialurónico para volumen facial"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Peelings Químicos",
+              "description": "Renovación cutánea con ácidos específicos"
+            }
+          }
+        ]
+      },
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Maipú 1651, Piso 2",
+          "addressLocality": "Vicente López",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "1638",
+          "addressCountry": "AR"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Bartolomé Mitre 480",
+          "addressLocality": "Capilla del Señor",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "2812",
+          "addressCountry": "AR"
+        }
+      ],
+      "geo": [
+        {
+          "@type": "GeoCoordinates",
+          "latitude": -34.5317,
+          "longitude": -58.4724
+        },
+        {
+          "@type": "GeoCoordinates",
+          "latitude": -34.3097,
+          "longitude": -59.1047
+        }
+      ],
+      "telephone": ["+54-11-3368-1890", "+54-11-7654-6995"],
+      "openingHours": [
+        "Mo 15:00-19:00",
+        "Tu 15:00-19:00",
+        "We 09:00-13:00"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Vicente López"
+        },
+        {
+          "@type": "City",
+          "name": "Capilla del Señor"
+        },
+        {
+          "@type": "State",
+          "name": "Buenos Aires"
+        }
+      ],
+      "medicalSpecialty": "Dermatology",
+      "paymentAccepted": "Cash, Credit Card",
+      "currenciesAccepted": "ARS",
+      "founder": {
+        "@type": "Person",
+        "name": "Daniela Bravo",
+        "jobTitle": "Dermatóloga",
+        "alumniOf": "Universidad de Buenos Aires"
+      },
+      "sameAs": [
+        "https://dradanielabravo.com"
+      ]
     }
     </script>
     
+    <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Optimized Google Fonts loading -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Resource hints for better performance -->
+    <link rel="prefetch" href="/lovable-uploads/59f3c988-666d-4024-a417-3c5b3013dae4.png">
+    <link rel="prefetch" href="/lovable-uploads/93a76c5c-7129-421e-a548-62cade32065f.png">
   </head>
 
   <body>
