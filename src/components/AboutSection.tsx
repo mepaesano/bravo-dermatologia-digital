@@ -36,9 +36,9 @@ const AboutSection = () => {
             <div className="lg:order-2 order-1 flex justify-center">
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-lg bg-rosa-empolvado/20">
                 <img 
-                  src="/lovable-uploads/4849d516-c282-4495-a7b2-452e45272d72.png" 
+                  src="/lovable-uploads/20e7fc5f-2ab3-4af6-a999-fa38571dc50d.png" 
                   alt="Dra. Daniela Bravo especialista dermatología estética Vicente López" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                   loading="lazy"
                   decoding="async"
                   width="320"
