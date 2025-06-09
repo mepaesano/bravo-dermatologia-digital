@@ -51,8 +51,8 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex-1 md:flex-none text-center md:text-left">
             <h1 
-              className="text-2xl md:text-3xl font-light text-gris-muy-oscuro tracking-wide cursor-pointer"
-              onClick={() => navigate('/')}
+              className="text-2xl md:text-3xl font-light text-gris-muy-oscuro tracking-wide cursor-pointer hover:text-rosa-coral transition-colors"
+              onClick={() => scrollToSection('inicio')}
             >
               Dra. Daniela Bravo
             </h1>
