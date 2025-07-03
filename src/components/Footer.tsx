@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Instagram, Star } from 'lucide-react';
 
@@ -6,8 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const openGoogleReviews = () => {
-    // URL genérica para reseñas de Google My Business - deberás reemplazar con la URL específica del negocio
-    window.open('https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review', '_blank');
+    window.open('https://www.google.com/maps/place/Dra.+Daniela+Bravo/@-34.5224001,-58.4868692,765m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95bcb1f837d2c531:0x7120a5d35b1037d5!8m2!3d-34.5224001!4d-58.4842943!16s%2Fg%2F11xdy7m8bc?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D', '_blank');
   };
 
   return (
