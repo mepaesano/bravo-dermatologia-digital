@@ -43,18 +43,12 @@ const HeroSection = () => {
             </h1>
             
             <h2 className="text-xl md:text-2xl lg:text-3xl font-light text-gris-oscuro mb-6 md:mb-8">
-              Centro de Dermatología Clínica y Estética
+              Centro de Dermatología y Estética
             </h2>
             
-            <p className="text-lg md:text-xl text-gris-oscuro mb-6 md:mb-8 max-w-3xl mx-auto font-light leading-relaxed px-4">
-              <strong>Consultas médicas dermatológicas</strong> y <strong>tratamientos estéticos especializados</strong>. Atención profesional y personalizada con <strong>toxina botulínica, mesoterapia, PRP facial, rellenos dérmicos y peelings químicos en Vicente López</strong>. 
+            <p className="text-lg md:text-xl text-gris-oscuro mb-8 md:mb-12 max-w-3xl mx-auto font-light leading-relaxed px-4">
+              Especialista en <strong>dermatología clínica y estética</strong>. Tratamientos de <strong>toxina botulínica, mesoterapia, PRP facial, rellenos dérmicos y peelings químicos en Vicente López</strong>. Tu piel, nuestra especialidad.
             </p>
-
-            <div className="bg-rosa-empolvado/10 border border-rosa-empolvado rounded-2xl p-4 md:p-6 mb-8 md:mb-12 max-w-2xl mx-auto">
-              <p className="text-base md:text-lg text-gris-muy-oscuro font-medium leading-relaxed">
-                La Dra. Daniela Bravo ofrece <strong>consultas médicas dermatológicas completas</strong> y responde a todas tus dudas sobre salud de la piel de manera profesional y personalizada, además de realizar tratamientos estéticos avanzados.
-              </p>
-            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center px-4">
               <button 
@@ -62,7 +56,7 @@ const HeroSection = () => {
                 className="bg-rosa-coral text-blanco px-8 md:px-12 py-3 md:py-4 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg text-sm md:text-base"
                 aria-label="Reservar turno online con la Dra. Daniela Bravo en Vicente López"
               >
-                Reservar Consulta Médica
+                Reservar Turno Online
               </button>
               <button 
                 onClick={() => scrollToSection('tratamientos')} 

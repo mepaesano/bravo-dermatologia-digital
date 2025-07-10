@@ -22,18 +22,12 @@ const AboutSection = () => {
                   Es miembro de la <strong>Sociedad Argentina de Dermatología</strong> y ha realizado múltiples cursos de posgrado en <strong>dermatología clínica y estética</strong>, manteniéndose en constante actualización en las últimas técnicas de tratamientos dermatológicos y estéticos.
                 </p>
                 
-                <div className="bg-rosa-empolvado/10 border-l-4 border-rosa-coral p-4 md:p-6 rounded-r-lg">
-                  <p className="font-medium text-gris-muy-oscuro">
-                    <strong>Consultas Médicas Personalizadas:</strong> La Dra. Bravo no solo realiza tratamientos estéticos, sino que también brinda <strong>consultas médicas dermatológicas completas</strong>, respondiendo todas las dudas sobre salud de la piel de manera profesional y personalizada.
-                  </p>
-                </div>
-                
                 <p>
                   A lo largo de su carrera como <strong>dermatóloga en Vicente López</strong>, se ha dedicado al cuidado integral de la piel, combinando ciencia, experiencia y una atención cercana. Acompaña a sus pacientes con información clara, desmitificando creencias y promoviendo hábitos saludables basados en evidencia científica.
                 </p>
 
                 <p>
-                  Su <strong>centro de dermatología en Vicente López</strong> ofrece un abordaje personalizado que integra tanto las <strong>consultas médicas dermatológicas</strong> como los tratamientos más modernos de <strong>dermatología estética</strong>, siempre priorizando la seguridad y los resultados naturales.
+                  Su <strong>centro estético en Vicente López</strong> ofrece un abordaje personalizado que integra los tratamientos más modernos de <strong>dermatología estética</strong>, siempre priorizando la seguridad y los resultados naturales.
                 </p>
               </div>
             </div>
@@ -43,7 +37,7 @@ const AboutSection = () => {
               <div className="w-80 h-96 md:w-96 md:h-[28rem] rounded-3xl overflow-hidden shadow-lg bg-rosa-empolvado/20">
                 <img 
                   src="/lovable-uploads/93a76c5c-7129-421e-a548-62cade32065f.png" 
-                  alt="Dra. Daniela Bravo, especialista en dermatología clínica y estética en Vicente López, en su consultorio médico" 
+                  alt="Dra. Daniela Bravo, especialista en dermatología estética en Vicente López, en su consultorio médico" 
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
