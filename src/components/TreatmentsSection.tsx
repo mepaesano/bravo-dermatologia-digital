@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 
 const TreatmentsSection = () => {
@@ -65,11 +66,17 @@ const TreatmentsSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-light text-gris-muy-oscuro mb-4 md:mb-6">
-              Tratamientos Dermatológicos y Estéticos en Vicente López
+              Consultas Médicas y Tratamientos Dermatológicos en Vicente López
             </h2>
-            <p className="text-lg md:text-xl text-gris-muy-oscuro font-light max-w-4xl mx-auto px-4">
-              Centro especializado en <strong>dermatología estética</strong> con los tratamientos más avanzados. Cada procedimiento es personalizado según las necesidades específicas de tu piel.
+            <p className="text-lg md:text-xl text-gris-muy-oscuro font-light max-w-4xl mx-auto px-4 mb-6">
+              Centro especializado en <strong>dermatología clínica y estética</strong> con consultas médicas personalizadas y los tratamientos más avanzados. Cada procedimiento es evaluado según las necesidades específicas de tu piel.
             </p>
+            
+            <div className="bg-rosa-empolvado/10 border border-rosa-empolvado rounded-2xl p-4 md:p-6 max-w-3xl mx-auto">
+              <p className="text-base md:text-lg text-gris-muy-oscuro font-medium leading-relaxed">
+                <strong>Importante:</strong> La Dra. Daniela Bravo realiza <strong>consultas médicas dermatológicas completas</strong> donde evalúa tu piel de manera integral, responde todas tus dudas y recomienda el mejor plan de tratamiento personalizado para cada paciente.
+              </p>
+            </div>
           </div>
 
           <div className="tratamientos-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
