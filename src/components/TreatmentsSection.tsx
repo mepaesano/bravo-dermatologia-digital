@@ -52,9 +52,9 @@ const TreatmentsSection = () => {
     },
     {
       title: "Dermatoscopía - Diagnóstico Avanzado de Lunares",
-      description: "Examen no invasivo con dermatoscopio digital para evaluación detallada de lunares y lesiones cutáneas. Permite detección temprana de melanoma y otros cáncer de piel. Control dermatológico preventivo esencial para la salud cutánea.",
+      description: "Examen no invasivo con dermatoscopio para evaluación detallada de lunares y lesiones cutáneas. Permite detección temprana de melanoma y otros cáncer de piel. Control dermatológico preventivo esencial para la salud cutánea.",
       image: "/lovable-uploads/2b013886-941f-4b58-8294-820f763935a6.png",
-      alt: "Dermatoscopía digital para diagnóstico de lunares y detección de melanoma en Vicente López"
+      alt: "Dermatoscopía para diagnóstico de lunares y detección de melanoma en Vicente López"
     },
   ];
 
