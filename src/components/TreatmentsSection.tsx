@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const TreatmentsSection = () => {
@@ -71,30 +72,30 @@ const TreatmentsSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="tratamientos-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {treatments.map((treatment, index) => (
-              <article 
+              <figure 
                 key={index} 
-                className="bg-blanco-calido p-4 md:p-6 rounded-2xl border border-rosa-empolvado hover:shadow-md transition-all duration-300 group"
+                className="tratamiento-card relative bg-blanco-calido rounded-2xl border border-rosa-empolvado overflow-hidden group cursor-pointer"
               >
-                <div className="mb-4 rounded-xl overflow-hidden">
-                  <img 
-                    src={treatment.image} 
-                    alt={treatment.alt}
-                    className="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                    decoding="async"
-                    width="400"
-                    height="300"
-                  />
-                </div>
-                <h3 className="text-base md:text-lg font-medium text-gris-muy-oscuro mb-3 leading-tight">
-                  {treatment.title}
-                </h3>
-                <p className="text-gris-muy-oscuro font-light leading-relaxed text-sm md:text-base">
-                  {treatment.description}
-                </p>
-              </article>
+                <img 
+                  src={treatment.image} 
+                  alt={treatment.alt}
+                  className="tratamiento-img w-full h-40 md:h-48 object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width="400"
+                  height="300"
+                />
+                <figcaption className="p-4 md:p-6">
+                  <h3 className="tratamiento-nombre text-base md:text-lg font-medium text-gris-muy-oscuro leading-tight">
+                    {treatment.title}
+                  </h3>
+                  <p className="tratamiento-desc absolute top-0 left-0 w-full h-full bg-blanco-calido/95 backdrop-blur-sm p-4 md:p-6 text-gris-muy-oscuro font-light leading-relaxed text-sm md:text-base opacity-0 transform translate-y-[-10px] transition-all duration-300 ease-out flex items-center justify-center text-center group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:translate-y-0">
+                    {treatment.description}
+                  </p>
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
