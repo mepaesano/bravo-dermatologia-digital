@@ -62,7 +62,7 @@ var treatments = [
   {
     slug: "dermatoscopia",
     name: "Dermatoscop\xEDa",
-    description: "Examen no invasivo de lunares y lesiones cut\xE1neas para detecci\xF3n temprana de melanoma y otros c\xE1nceres de piel.",
+    description: "Examen no invasivo de lunares y lesiones cut\xE1neas para detecci\xF3n temprana de melanoma y otros tipos de c\xE1ncer de piel.",
     category: "clinica"
   }
 ];

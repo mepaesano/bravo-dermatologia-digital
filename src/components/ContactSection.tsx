@@ -137,7 +137,7 @@ const ContactSection = () => {
                 className="inline-flex items-center text-rosa-coral hover:text-rosa-coral/80 transition-colors font-light"
               >
                 <Star className="w-5 h-5 mr-2" />
-                Dejanos tu reseña en Google
+                Dejános tu reseña en Google
               </a>
             </div>
           </div>
