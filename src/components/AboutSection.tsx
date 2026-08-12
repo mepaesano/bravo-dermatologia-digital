@@ -1,13 +1,19 @@
 
 import React from 'react';
 import aboutImage from '@/assets/02-sobre-dra-daniela-bravo.webp.asset.json';
+import { useReveal } from '@/hooks/use-reveal';
 
 const AboutSection = () => {
+  const { ref, visible } = useReveal<HTMLDivElement>();
+
   return (
     <section id="sobre" className="bg-blanco-calido border-t border-rosa-empolvado py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div
+            ref={ref}
+            className={`reveal ${visible ? 'reveal-visible' : ''} grid lg:grid-cols-2 gap-8 md:gap-12 items-center`}
+          >
             {/* Texto a la izquierda */}
             <div className="lg:order-1 order-2">
               <h2 className="text-3xl md:text-4xl font-light text-gris-muy-oscuro mb-6 md:mb-8">
