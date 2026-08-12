@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Star } from 'lucide-react';
+import { Instagram, Star, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,6 +15,19 @@ const Footer = () => {
           <h2 className="text-2xl font-light text-gris-muy-oscuro mb-4">Dra. Daniela Bravo</h2>
           <p className="text-gris-oscuro font-light mb-6">Dermatología clínica y estética</p>
           
+          <div className="text-gris-oscuro font-light space-y-2 mb-6">
+            <p className="flex items-center justify-center">
+              <MapPin className="w-4 h-4 mr-2 text-rosa-coral" />
+              Av. Maipú 1651, Piso 2 — Vicente López, Buenos Aires
+            </p>
+            <p className="flex items-center justify-center">
+              <Phone className="w-4 h-4 mr-2 text-rosa-coral" />
+              <a href="tel:+5491133681890" className="hover:text-rosa-coral transition-colors">
+                +54 9 11 3368-1890
+              </a>
+            </p>
+          </div>
+
           <a 
             href="https://instagram.com/dradanielabravo" 
             target="_blank" 
@@ -24,6 +37,7 @@ const Footer = () => {
             <Instagram className="w-5 h-5 mr-2" />
             @dradanielabravo
           </a>
+
 
           <div className="mb-8">
             <button 

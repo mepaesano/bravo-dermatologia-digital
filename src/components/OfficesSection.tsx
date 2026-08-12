@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useReveal } from '@/hooks/use-reveal';
 
 const offices = [
   {
@@ -24,6 +25,8 @@ const offices = [
 ];
 
 const OfficesSection = () => {
+  const { ref, visible } = useReveal<HTMLDivElement>();
+
   return (
     <section id="consultorios" className="bg-blanco border-t border-rosa-empolvado py-24 scroll-mt-24">
       <div className="container mx-auto px-6">
@@ -35,7 +38,10 @@ const OfficesSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div
+            ref={ref}
+            className={`reveal ${visible ? 'reveal-visible' : ''} grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12`}
+          >
             {offices.map((office) => (
               <div
                 key={office.name}
