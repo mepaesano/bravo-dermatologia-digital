@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useReveal } from '@/hooks/use-reveal';
 
 const offices = [
   {
