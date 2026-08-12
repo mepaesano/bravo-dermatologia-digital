@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import heroImage from '@/assets/01-hero-dra-daniela-bravo.webp.asset.json';
 
 const HeroSection = () => {
   const navigate = useNavigate();
