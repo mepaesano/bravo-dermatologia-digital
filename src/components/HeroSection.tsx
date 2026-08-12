@@ -29,7 +29,7 @@ const HeroSection = () => {
           <div className="mb-12 md:mb-16">
             <img 
               src={heroImage.url} 
-              alt="Dra. Daniela Bravo dermatóloga especialista en Vicente López, centro estético de dermatología clínica y estética" 
+              alt="Dra. Daniela Bravo dermatóloga especialista en Vicente López y Zona Norte, centro estético de dermatología clínica y estética" 
               className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full object-cover mb-8 md:mb-12 shadow-lg" 
               loading="eager"
               decoding="async"
