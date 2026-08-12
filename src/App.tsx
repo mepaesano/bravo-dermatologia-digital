@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Turnos from "./pages/Turnos";
 import NotFound from "./pages/NotFound";
 import SectionRedirect from "./components/SectionRedirect";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <WhatsAppButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
