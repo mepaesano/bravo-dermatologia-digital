@@ -14,7 +14,7 @@ import { treatmentPagesBySlug, type TreatmentPageData } from '@/data/treatments'
 
 const BASE_URL = 'https://dradanielabravo.com';
 const DEFAULT_DESCRIPTION =
-  'Dra. Daniela Bravo, dermatóloga especialista en Vicente López. Centro estético con tratamientos de toxina botulínica, mesoterapia, PRP, peelings químicos, rellenos dérmicos. Consultorio dermatológico en Vicente López y Capilla del Señor.';
+  'Dra. Daniela Bravo, dermatóloga especialista en Vicente López y Zona Norte. Centro estético con tratamientos de toxina botulínica, mesoterapia, PRP, peelings químicos, rellenos dérmicos. Consultorio dermatológico en Vicente López y Capilla del Señor.';
 
 const RevealBlock = ({
   children,

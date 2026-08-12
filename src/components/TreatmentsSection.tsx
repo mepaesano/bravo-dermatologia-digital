@@ -79,55 +79,55 @@ const TreatmentsSection = () => {
       title: "PRP (Plasma Rico en Plaquetas) – Facial y Capilar",
       description: "Tratamiento de medicina regenerativa que utiliza plasma rico en plaquetas del propio paciente. Estimula la regeneración celular, mejora la calidad de la piel y trata la caída del cabello. Ideal para rejuvenecimiento facial natural y fortalecimiento capilar.",
       image: prpImg.url,
-      alt: "Tratamiento PRP plasma rico en plaquetas facial y capilar en Vicente López, dermatología regenerativa"
+      alt: "Tratamiento PRP plasma rico en plaquetas facial y capilar en Vicente López y Zona Norte, dermatología regenerativa"
     },
     {
       title: "Mesoterapia Facial y Capilar en Vicente López",
       description: "Técnica mínimamente invasiva que consiste en microinyecciones de principios activos específicos. Revitaliza la piel del rostro, mejora la hidratación y estimula el crecimiento capilar. Tratamiento personalizado según las necesidades de cada paciente.",
       image: mesoImg.url,
-      alt: "Mesoterapia facial y capilar en Vicente López, microinyecciones para revitalización de la piel"
+      alt: "Mesoterapia facial y capilar en Vicente López y Zona Norte, microinyecciones para revitalización de la piel"
     },
     {
       title: "Bioestimulación Facial - Rejuvenecimiento Natural",
       description: "Tratamiento no invasivo que activa los procesos naturales de regeneración cutánea. Estimula la producción de colágeno y elastina, mejorando la textura, firmeza y luminosidad de la piel. Resultados graduales y naturales para un rostro renovado.",
       image: bioImg.url,
-      alt: "Bioestimulación facial para producción de colágeno y elastina, rejuvenecimiento natural en Vicente López"
+      alt: "Bioestimulación facial para producción de colágeno y elastina, rejuvenecimiento natural en Vicente López y Zona Norte"
     },
     {
       title: "Toxina Botulínica en Vicente López",
       description: "Aplicación profesional de toxina botulínica para suavizar arrugas de expresión y prevenir líneas futuras. Tratamiento seguro y efectivo para frente, entrecejo y patas de gallo. Resultados naturales que respetan la expresión facial.",
       image: botoxImg.url,
-      alt: "Aplicación de toxina botulínica en Vicente López para arrugas de expresión, frente y entrecejo"
+      alt: "Aplicación de toxina botulínica en Vicente López y Zona Norte para arrugas de expresión, frente y entrecejo"
     },
     {
       title: "Rellenos Dérmicos con Ácido Hialurónico",
       description: "Corrección de surcos nasogenianos, aumento de volumen en labios y pómulos con ácido hialurónico de alta calidad. Restaura la armonía facial de manera natural y segura. Técnica precisa para resultados equilibrados y duraderos.",
       image: rellenosImg.url,
-      alt: "Rellenos dérmicos con ácido hialurónico para labios y pómulos en Vicente López, dermatología estética"
+      alt: "Rellenos dérmicos con ácido hialurónico para labios y pómulos en Vicente López y Zona Norte, dermatología estética"
     },
     {
       title: "Peelings Químicos - Renovación Cutánea",
       description: "Exfoliación controlada con ácidos específicos para renovar la capa superficial de la piel. Mejora textura, reduce manchas, cicatrices de acné y signos de envejecimiento. Diferentes intensidades según el tipo de piel y objetivos del tratamiento.",
       image: peelingImg.url,
-      alt: "Peeling químico para exfoliación y renovación cutánea, tratamiento de manchas y acné en Vicente López"
+      alt: "Peeling químico para exfoliación y renovación cutánea, tratamiento de manchas y acné en Vicente López y Zona Norte"
     },
     {
       title: "Mesolifting - Lifting Natural sin Cirugía",
       description: "Combinación de vitaminas, aminoácidos y antioxidantes aplicados mediante microinyecciones. Produce un efecto lifting natural, mejora la firmeza cutánea y aporta luminosidad. Alternativa no quirúrgica para rejuvenecer el rostro.",
       image: mesoliftImg.url,
-      alt: "Mesolifting con vitaminas y aminoácidos, lifting natural sin cirugía en Vicente López"
+      alt: "Mesolifting con vitaminas y aminoácidos, lifting natural sin cirugía en Vicente López y Zona Norte"
     },
     {
       title: "Criocirugía - Tratamiento con Frío Terapéutico",
       description: "Técnica dermatológica que utiliza frío extremo para eliminar lesiones cutáneas benignas y malignas. Procedimiento preciso y efectivo para verrugas, queratosis actínicas y otros tumores de piel. Mínimo tiempo de recuperación.",
       image: crioImg.url,
-      alt: "Criocirugía con frío terapéutico para tratamiento de verrugas y queratosis en Vicente López"
+      alt: "Criocirugía con frío terapéutico para tratamiento de verrugas y queratosis en Vicente López y Zona Norte"
     },
     {
       title: "Dermatoscopía - Diagnóstico Avanzado de Lunares",
       description: "Examen no invasivo con dermatoscopio para evaluación detallada de lunares y lesiones cutáneas. Permite detección temprana de melanoma y otros tipos de cáncer de piel. Control dermatológico preventivo esencial para la salud cutánea.",
       image: dermaImg.url,
-      alt: "Dermatoscopía para diagnóstico de lunares y detección de melanoma en Vicente López"
+      alt: "Dermatoscopía para diagnóstico de lunares y detección de melanoma en Vicente López y Zona Norte"
     },
   ];
 

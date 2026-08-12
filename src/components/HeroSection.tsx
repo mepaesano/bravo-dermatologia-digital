@@ -38,10 +38,13 @@ const HeroSection = () => {
               fetchPriority="high"
             />
             
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gris-muy-oscuro mb-6 md:mb-8 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gris-muy-oscuro mb-4 md:mb-6 leading-tight">
               Dra. Daniela Bravo
               <span className="block text-rosa-coral font-normal mt-2">Dermatóloga Especialista en Vicente López</span>
             </h1>
+            <p className="text-sm md:text-base text-gris-oscuro font-light mb-6 md:mb-8">
+              Atendemos en Vicente López y Zona Norte
+            </p>
             
             <h2 className="text-xl md:text-2xl lg:text-3xl font-light text-gris-oscuro mb-6 md:mb-8">
               Centro de Dermatología y Estética
