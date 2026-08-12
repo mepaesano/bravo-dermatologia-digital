@@ -50,12 +50,12 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="flex-1 md:flex-none text-center md:text-left">
-            <h1 
+            <div 
               className="text-2xl md:text-3xl font-light text-gris-muy-oscuro tracking-wide cursor-pointer hover:text-rosa-coral transition-colors"
               onClick={() => scrollToSection('inicio')}
             >
               Dra. Daniela Bravo
-            </h1>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
