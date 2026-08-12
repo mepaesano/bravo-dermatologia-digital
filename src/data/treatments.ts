@@ -291,4 +291,3 @@ export const cardTitleToSlug: Record<string, string> = {
   'Peelings Químicos - Renovación Cutánea': 'peelings-quimicos',
 };
 
-export const unusedDermaImg = dermaImg.url;
