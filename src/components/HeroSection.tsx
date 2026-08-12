@@ -43,7 +43,7 @@ const HeroSection = () => {
               <span className="block text-rosa-coral font-normal mt-2">Dermatóloga Especialista en Vicente López</span>
             </h1>
             <p className="text-sm md:text-base text-gris-oscuro font-light mb-6 md:mb-8">
-              Atendemos en Vicente López y Zona Norte
+              Dermatología clínica y estética en Vicente López y Zona Norte
             </p>
             
             <h2 className="text-xl md:text-2xl lg:text-3xl font-light text-gris-oscuro mb-6 md:mb-8">

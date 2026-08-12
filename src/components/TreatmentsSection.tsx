@@ -140,7 +140,7 @@ const TreatmentsSection = () => {
               Tratamientos Dermatológicos y Estéticos en Vicente López
             </h2>
             <p className="text-lg md:text-xl text-gris-muy-oscuro font-light max-w-4xl mx-auto px-4">
-              Centro especializado en <strong>dermatología estética</strong> con los tratamientos más avanzados. Cada procedimiento es personalizado según las necesidades específicas de tu piel.
+              Centro especializado en <strong>dermatología clínica y estética</strong>. Además de los procedimientos de rejuvenecimiento, la Dra. Bravo atiende <strong>consultas médicas dermatológicas generales</strong>: diagnóstico y tratamiento de afecciones de la piel, control de lunares, acné y otras patologías. Cada procedimiento es personalizado según las necesidades específicas de tu piel.
             </p>
           </div>
 
