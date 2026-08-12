@@ -4,10 +4,12 @@ const OFFICES = [
   {
     name: 'Consultorio Vicente López',
     phone: '5491133681890',
+    message: 'Hola, quiero consultar por un turno con la Dra. Bravo en Vicente López',
   },
   {
     name: 'Consultorio Capilla del Señor',
     phone: '5491176546995',
+    message: 'Hola, quiero consultar por un turno con la Dra. Bravo en Capilla del Señor',
   },
 ];
 
@@ -31,12 +33,6 @@ const WhatsAppButton = () => {
     };
   }, [open]);
 
-  const openWhatsApp = (phone: string, location: string) => {
-    const message = encodeURIComponent(`Hola, quiero consultar por un turno en el consultorio de ${location}`);
-    window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
-    setOpen(false);
-  };
-
   return (
     <div ref={containerRef} className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
       {open && (
@@ -46,14 +42,17 @@ const WhatsAppButton = () => {
           className="mb-2 flex flex-col gap-2 rounded-2xl bg-blanco p-3 shadow-xl border border-rosa-empolvado animate-in fade-in slide-in-from-bottom-2 duration-200"
         >
           {OFFICES.map((office) => (
-            <button
+            <a
               key={office.phone}
               role="menuitem"
-              onClick={() => openWhatsApp(office.phone, office.name)}
+              href={`https://wa.me/${office.phone}?text=${encodeURIComponent(office.message)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
               className="text-left px-4 py-3 rounded-xl text-sm font-medium text-gris-muy-oscuro bg-blanco-calido hover:bg-rosa-empolvado/30 transition-colors duration-200 whitespace-nowrap"
             >
               {office.name}
-            </button>
+            </a>
           ))}
         </div>
       )}
