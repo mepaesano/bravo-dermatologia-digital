@@ -68,7 +68,7 @@ export const treatments: Treatment[] = [
     slug: "dermatoscopia",
     name: "Dermatoscopía",
     description:
-      "Examen no invasivo de lunares y lesiones cutáneas para detección temprana de melanoma y otros cánceres de piel.",
+      "Examen no invasivo de lunares y lesiones cutáneas para detección temprana de melanoma y otros tipos de cáncer de piel.",
     category: "clinica",
   },
 ];

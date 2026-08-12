@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
     {
       id: 5,
       name: "Alejandra M.",
-      text: "Increíble como mejoró la calidad de mi piel con los tratamientos recomendados. El consultorio es muy acogedor y el trato es excelente.",
+      text: "Increíble cómo mejoró la calidad de mi piel con los tratamientos recomendados. El consultorio es muy acogedor y el trato es excelente.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80"
     },

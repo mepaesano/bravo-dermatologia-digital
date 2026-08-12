@@ -29,10 +29,10 @@ const Footer = () => {
             <button 
               onClick={openGoogleReviews}
               className="bg-rosa-coral text-blanco px-6 py-3 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mx-auto"
-              aria-label="Déjanos tu reseña en Google"
+              aria-label="Dejános tu reseña en Google"
             >
               <Star className="w-5 h-5" />
-              Déjanos tu reseña en Google
+              Dejános tu reseña en Google
             </button>
           </div>
 
