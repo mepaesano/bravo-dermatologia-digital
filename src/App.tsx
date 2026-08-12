@@ -24,6 +24,7 @@ const App = () => (
           <Route path="/turnos" element={<Turnos />} />
           <Route path="/sobre" element={<SectionRedirect sectionId="sobre" />} />
           <Route path="/tratamientos" element={<SectionRedirect sectionId="tratamientos" />} />
+          <Route path="/tratamientos/:slug" element={<Tratamiento />} />
           <Route path="/consultorios" element={<SectionRedirect sectionId="consultorios" />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
