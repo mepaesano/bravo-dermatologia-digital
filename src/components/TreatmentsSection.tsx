@@ -1,5 +1,6 @@
 
 import React from 'react';
+import dermaImg from '@/assets/11-tratamiento-dermatoscopia.webp.asset.json';
 import prpImg from '@/assets/03-tratamiento-prp.webp.asset.json';
 import mesoImg from '@/assets/04-tratamiento-mesoterapia.webp.asset.json';
 import bioImg from '@/assets/05-tratamiento-bioestimulacion.webp.asset.json';
@@ -62,7 +63,7 @@ const TreatmentsSection = () => {
     {
       title: "Dermatoscopía - Diagnóstico Avanzado de Lunares",
       description: "Examen no invasivo con dermatoscopio para evaluación detallada de lunares y lesiones cutáneas. Permite detección temprana de melanoma y otros tipos de cáncer de piel. Control dermatológico preventivo esencial para la salud cutánea.",
-      image: "/lovable-uploads/2b013886-941f-4b58-8294-820f763935a6.png",
+      image: dermaImg.url,
       alt: "Dermatoscopía para diagnóstico de lunares y detección de melanoma en Vicente López"
     },
   ];

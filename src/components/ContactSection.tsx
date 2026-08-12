@@ -1,31 +1,37 @@
 
 import React from 'react';
 import { Instagram, MapPin, Star } from 'lucide-react';
+import salaConsultaImg from '@/assets/12-consultorio-sala-consulta.webp.asset.json';
+import equipamientoImg from '@/assets/13-consultorio-equipamiento.webp.asset.json';
+import recepcionImg from '@/assets/14-consultorio-recepcion.webp.asset.json';
+import diplomasImg from '@/assets/15-consultorio-diplomas.webp.asset.json';
+import pasilloImg from '@/assets/16-consultorio-pasillo.webp.asset.json';
+import vistaSalaImg from '@/assets/17-consultorio-vista-sala.webp.asset.json';
 
 const ContactSection = () => {
   const consultorioImages = [
     {
-      src: "/lovable-uploads/0623be76-fb61-476c-a8d7-edce4f2bd8af.png",
+      src: salaConsultaImg.url,
       alt: "Consultorio dermatología Vicente López - sala de consulta moderna con escritorio blanco"
     },
     {
-      src: "/lovable-uploads/b87e7768-e5c3-4ec7-9140-94251e8c08ce.png", 
+      src: equipamientoImg.url, 
       alt: "Consultorio dermatológico Vicente López - equipamiento médico especializado"
     },
     {
-      src: "/lovable-uploads/e68cd1e7-ad01-450c-8543-3c23bf4d3570.png",
+      src: recepcionImg.url,
       alt: "Recepción centro dermatológico Vicente López - sala de espera moderna"
     },
     {
-      src: "/lovable-uploads/45d8ee2a-dde6-48d9-b805-6664381690b3.png",
+      src: diplomasImg.url,
       alt: "Consultorio Dra. Daniela Bravo - diplomas y certificaciones dermatología"
     },
     {
-      src: "/lovable-uploads/d829981e-36e1-4cae-9f55-5ee5ae983cf0.png",
+      src: pasilloImg.url,
       alt: "Pasillo centro médico Vicente López - instalaciones modernas dermatología"
     },
     {
-      src: "/lovable-uploads/297cde49-b6d1-45aa-8e36-c79961c785f1.png",
+      src: vistaSalaImg.url,
       alt: "Consultorio dermatológico moderno - vista de la sala de consulta"
     }
   ];
