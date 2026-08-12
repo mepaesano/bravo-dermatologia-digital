@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Turnos from "./pages/Turnos";
 import NotFound from "./pages/NotFound";
+import SectionRedirect from "./components/SectionRedirect";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/turnos" element={<Turnos />} />
+          <Route path="/sobre" element={<SectionRedirect sectionId="sobre" />} />
+          <Route path="/tratamientos" element={<SectionRedirect sectionId="tratamientos" />} />
+          <Route path="/consultorios" element={<SectionRedirect sectionId="consultorios" />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

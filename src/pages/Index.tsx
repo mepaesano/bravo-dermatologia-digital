@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import TreatmentsSection from '../components/TreatmentsSection';
+import OfficesSection from '../components/OfficesSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -44,6 +45,12 @@ const Index = () => {
         {
           "@type": "ListItem",
           "position": 4,
+          "name": "Consultorios",
+          "item": "https://dradanielabravo.com/#consultorios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
           "name": "Turnos",
           "item": "https://dradanielabravo.com/turnos"
         }
@@ -60,6 +67,15 @@ const Index = () => {
     };
   }, []);
 
+  React.useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (!hash) return;
+    const timer = window.setTimeout(() => {
+      document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' });
+    }, 150);
+    return () => window.clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen bg-blanco-calido">
       <Header />
@@ -67,6 +83,7 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <TreatmentsSection />
+        <OfficesSection />
       </main>
       <Footer />
     </div>
