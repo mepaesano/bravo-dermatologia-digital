@@ -1,6 +1,9 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { useReveal } from '@/hooks/use-reveal';
+import { cardTitleToSlug } from '@/data/treatments';
 import dermaImg from '@/assets/11-tratamiento-dermatoscopia.webp.asset.json';
 import prpImg from '@/assets/03-tratamiento-prp.webp.asset.json';
 import mesoImg from '@/assets/04-tratamiento-mesoterapia.webp.asset.json';
