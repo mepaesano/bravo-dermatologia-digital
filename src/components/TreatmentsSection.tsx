@@ -43,7 +43,21 @@ const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: numb
         <h3 className="tratamiento-nombre text-base md:text-lg font-medium text-gris-muy-oscuro leading-tight transition-colors duration-300 group-hover:text-rosa-coral">
           {treatment.title}
         </h3>
-        <p className="tratamiento-desc absolute top-0 left-0 w-full h-full bg-blanco-calido/95 backdrop-blur-sm p-4 md:p-6 text-gris-muy-oscuro font-light leading-relaxed text-sm md:text-base opacity-0 transform translate-y-[-10px] transition-all duration-300 ease-out flex items-center justify-center text-center group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:translate-y-0">
+        {slug && (
+          <Link
+            to={`/tratamientos/${slug}`}
+            className="relative z-10 mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-rosa-coral hover:gap-2.5 transition-all duration-300"
+            aria-label={`Ver más sobre ${treatment.title}`}
+          >
+            Ver más
+            <ArrowRight size={16} aria-hidden="true" />
+          </Link>
+        )}
+        <p
+          className={`tratamiento-desc pointer-events-none absolute top-0 left-0 right-0 ${
+            slug ? 'bottom-14 md:bottom-16' : 'bottom-0'
+          } bg-blanco-calido/95 backdrop-blur-sm p-4 md:p-6 text-gris-muy-oscuro font-light leading-relaxed text-sm md:text-base opacity-0 transform translate-y-[-10px] transition-all duration-300 ease-out flex items-center justify-center text-center group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:translate-y-0`}
+        >
           {treatment.description}
         </p>
       </figcaption>
