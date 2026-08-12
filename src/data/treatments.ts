@@ -3,6 +3,10 @@ import mesoImg from '@/assets/04-tratamiento-mesoterapia.webp.asset.json';
 import botoxImg from '@/assets/06-tratamiento-toxina-botulinica.webp.asset.json';
 import rellenosImg from '@/assets/07-tratamiento-rellenos-dermicos.webp.asset.json';
 import peelingImg from '@/assets/08-tratamiento-peeling-quimico.webp.asset.json';
+import bioImg from '@/assets/05-tratamiento-bioestimulacion.webp.asset.json';
+import mesoliftImg from '@/assets/09-tratamiento-mesolifting.webp.asset.json';
+import crioImg from '@/assets/10-tratamiento-criocirugia.webp.asset.json';
+import dermaImg from '@/assets/11-tratamiento-dermatoscopia.webp.asset.json';
 
 export type TreatmentPageData = {
   slug: string;
