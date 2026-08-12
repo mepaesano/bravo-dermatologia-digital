@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Star } from 'lucide-react';
+import { Instagram, Star, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
