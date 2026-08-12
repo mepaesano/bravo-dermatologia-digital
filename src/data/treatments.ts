@@ -1,4 +1,3 @@
-import dermaImg from '@/assets/11-tratamiento-dermatoscopia.webp.asset.json';
 import prpImg from '@/assets/03-tratamiento-prp.webp.asset.json';
 import mesoImg from '@/assets/04-tratamiento-mesoterapia.webp.asset.json';
 import botoxImg from '@/assets/06-tratamiento-toxina-botulinica.webp.asset.json';
