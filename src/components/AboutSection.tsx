@@ -1,5 +1,6 @@
 
 import React from 'react';
+import aboutImage from '@/assets/02-sobre-dra-daniela-bravo.webp.asset.json';
 
 const AboutSection = () => {
   return (
