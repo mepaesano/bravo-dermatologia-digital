@@ -7,7 +7,7 @@ import { defineMcp } from "npm:@lovable.dev/mcp-js@0.26.2";
 
 // src/lib/mcp/tools/list-treatments.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.26.2";
-import { z } from "npm:zod@^3.23.8";
+import { z } from "npm:zod@^4";
 
 // src/lib/mcp/data.ts
 var treatments = [
@@ -124,7 +124,7 @@ var list_treatments_default = defineTool({
 
 // src/lib/mcp/tools/list-offices.ts
 import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.26.2";
-import { z as z2 } from "npm:zod@^3.23.8";
+import { z as z2 } from "npm:zod@^4";
 var list_offices_default = defineTool2({
   name: "list_offices",
   title: "Consultorios y horarios",
