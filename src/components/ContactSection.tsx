@@ -73,6 +73,8 @@ const ContactSection = () => {
                           className="w-full h-64 object-cover"
                           loading="lazy"
                           decoding="async"
+                          width="296"
+                          height="256"
                         />
                       </div>
                     </div>

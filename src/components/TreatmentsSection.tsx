@@ -94,7 +94,7 @@ const TreatmentsSection = () => {
                   loading="lazy"
                   decoding="async"
                   width="400"
-                  height="300"
+                  height="192"
                 />
                 <figcaption className="p-4 md:p-6">
                   <h3 className="tratamiento-nombre text-base md:text-lg font-medium text-gris-muy-oscuro leading-tight">

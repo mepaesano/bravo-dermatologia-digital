@@ -62,6 +62,10 @@ const TestimonialsSection = () => {
                   src={testimonial.image} 
                   alt={testimonial.name} 
                   className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-rosa-pastel"
+                  loading="lazy"
+                  decoding="async"
+                  width="48"
+                  height="48"
                 />
                 <div>
                   <h3 className="font-bold text-gray-800">{testimonial.name}</h3>
