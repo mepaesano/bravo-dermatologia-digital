@@ -44,7 +44,7 @@ const AboutSection = () => {
               <div className="w-80 h-96 md:w-96 md:h-[28rem] rounded-3xl overflow-hidden shadow-lg bg-rosa-empolvado/20">
                 <img 
                   src={aboutImage.url} 
-                  alt="Dra. Daniela Bravo, especialista en dermatología estética en Vicente López, en su consultorio médico" 
+                  alt="Dra. Daniela Bravo, especialista en dermatología estética en Vicente López y Zona Norte, en su consultorio médico" 
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"

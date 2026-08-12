@@ -25,15 +25,16 @@ export const treatmentPages: TreatmentPageData[] = [
     slug: 'toxina-botulinica',
     name: 'Toxina Botulínica',
     h1: 'Toxina Botulínica en Vicente López',
-    title: 'Toxina Botulínica en Vicente López | Dra. Daniela Bravo',
+    title: 'Toxina Botulínica en Vicente López | Zona Norte | Dra. Daniela Bravo',
     metaDescription:
-      'Aplicación de toxina botulínica en Vicente López con la Dra. Daniela Bravo, dermatóloga. Suavizá arrugas de expresión en frente, entrecejo y patas de gallo con resultados naturales.',
+      'Aplicación de toxina botulínica en Vicente López y Zona Norte con la Dra. Daniela Bravo, dermatóloga. Suavizá arrugas de expresión en frente, entrecejo y patas de gallo con resultados naturales.',
     image: botoxImg.url,
-    alt: 'Aplicación de toxina botulínica en Vicente López para arrugas de expresión, frente y entrecejo',
+    alt: 'Aplicación de toxina botulínica en Vicente López y Zona Norte para arrugas de expresión, frente y entrecejo',
     intro: [
       'La toxina botulínica es uno de los tratamientos más elegidos dentro de la dermatología estética para suavizar las arrugas de expresión. Actúa relajando de manera temporal la musculatura responsable de las líneas dinámicas del rostro, sin modificar los rasgos ni la naturalidad del gesto.',
       'En el consultorio de Vicente López la aplicación es siempre personalizada: se evalúa la fuerza muscular, la calidad de la piel y los objetivos de cada paciente para definir las zonas y las dosis. Las áreas más tratadas son frente, entrecejo y patas de gallo.',
       'Además de su uso estético, la toxina botulínica tiene indicaciones médicas como el tratamiento de la sudoración excesiva (hiperhidrosis) en axilas, palmas y plantas. En todos los casos la indicación la define la evaluación dermatológica previa.',
+      'También atendemos pacientes que se acercan desde la Zona Norte (San Isidro, Olivos, Martínez) buscando una aplicación segura y natural de toxina botulínica.',
     ],
     session: [
       'Consulta inicial y evaluación de la dinámica facial en reposo y en movimiento.',
@@ -76,15 +77,16 @@ export const treatmentPages: TreatmentPageData[] = [
     slug: 'rellenos-dermicos',
     name: 'Rellenos Dérmicos',
     h1: 'Rellenos Dérmicos con Ácido Hialurónico en Vicente López',
-    title: 'Rellenos Dérmicos con Ácido Hialurónico en Vicente López',
+    title: 'Rellenos Dérmicos con Ácido Hialurónico en Vicente López | Zona Norte',
     metaDescription:
-      'Rellenos dérmicos con ácido hialurónico en Vicente López: labios, pómulos y surcos nasogenianos. Armonía facial natural con la Dra. Daniela Bravo, dermatóloga.',
+      'Rellenos dérmicos con ácido hialurónico en Vicente López y Zona Norte: labios, pómulos y surcos nasogenianos. Armonía facial natural con la Dra. Daniela Bravo, dermatóloga.',
     image: rellenosImg.url,
-    alt: 'Rellenos dérmicos con ácido hialurónico para labios y pómulos en Vicente López, dermatología estética',
+    alt: 'Rellenos dérmicos con ácido hialurónico para labios y pómulos en Vicente López y Zona Norte, dermatología estética',
     intro: [
       'Los rellenos dérmicos con ácido hialurónico permiten restaurar volúmenes perdidos y corregir surcos de manera segura y reversible. El ácido hialurónico es una sustancia presente de forma natural en la piel, con gran capacidad de retener agua y aportar sostén.',
       'Se utilizan para corregir surcos nasogenianos, definir e hidratar labios, reponer volumen en pómulos y mejorar el contorno mandibular o el mentón. El objetivo siempre es la armonía facial, no el exceso.',
       'En la consulta en Vicente López se realiza un análisis facial completo para elegir el tipo de ácido hialurónico y la técnica adecuada según la zona, la edad y las características de la piel de cada paciente.',
+      'Atendemos también a pacientes de la Zona Norte (San Isidro, Olivos, Martínez) que buscan rellenos dérmicos con ácido hialurónico en un consultorio dermatológico.',
     ],
     session: [
       'Evaluación facial y planificación de las zonas a tratar con el paciente frente al espejo.',
@@ -127,15 +129,15 @@ export const treatmentPages: TreatmentPageData[] = [
     slug: 'prp',
     name: 'PRP (Plasma Rico en Plaquetas)',
     h1: 'PRP (Plasma Rico en Plaquetas) en Vicente López',
-    title: 'PRP Facial y Capilar en Vicente López | Dra. Daniela Bravo',
+    title: 'PRP Facial y Capilar en Vicente López | Zona Norte | Dra. Daniela Bravo',
     metaDescription:
-      'PRP (plasma rico en plaquetas) facial y capilar en Vicente López. Medicina regenerativa para mejorar la calidad de la piel y tratar la caída del cabello con la Dra. Daniela Bravo.',
+      'PRP (plasma rico en plaquetas) facial y capilar en Vicente López y Zona Norte. Medicina regenerativa para mejorar la calidad de la piel y tratar la caída del cabello con la Dra. Daniela Bravo.',
     image: prpImg.url,
-    alt: 'Tratamiento PRP plasma rico en plaquetas facial y capilar en Vicente López, dermatología regenerativa',
+    alt: 'Tratamiento PRP plasma rico en plaquetas facial y capilar en Vicente López y Zona Norte, dermatología regenerativa',
     intro: [
       'El PRP o plasma rico en plaquetas es un tratamiento de medicina regenerativa que utiliza componentes de la propia sangre del paciente. Al concentrar las plaquetas se obtienen factores de crecimiento que estimulan la reparación de los tejidos.',
       'A nivel facial mejora la calidad, el brillo y la firmeza de la piel, y resulta especialmente útil en pieles apagadas, con signos iniciales de envejecimiento o secuelas de acné. A nivel capilar ayuda a fortalecer el folículo y a frenar la caída del cabello.',
-      'Al tratarse de un producto autólogo —derivado del propio paciente— el riesgo de reacción alérgica es prácticamente nulo. En el consultorio de Vicente López se realiza como parte de un plan dermatológico individualizado.',
+      'Al tratarse de un producto autólogo —derivado del propio paciente— el riesgo de reacción alérgica es prácticamente nulo. En el consultorio de Vicente López se realiza como parte de un plan dermatológico individualizado, y también recibimos pacientes de la Zona Norte (San Isidro, Olivos, Martínez).',
     ],
     session: [
       'Extracción de una pequeña muestra de sangre del paciente, como en un análisis de rutina.',
@@ -178,15 +180,15 @@ export const treatmentPages: TreatmentPageData[] = [
     slug: 'peelings-quimicos',
     name: 'Peelings Químicos',
     h1: 'Peelings Químicos en Vicente López',
-    title: 'Peelings Químicos en Vicente López | Dra. Daniela Bravo',
+    title: 'Peelings Químicos en Vicente López | Zona Norte | Dra. Daniela Bravo',
     metaDescription:
-      'Peelings químicos en Vicente López para manchas, acné y textura de la piel. Renovación cutánea personalizada con la Dra. Daniela Bravo, dermatóloga.',
+      'Peelings químicos en Vicente López y Zona Norte para manchas, acné y textura de la piel. Renovación cutánea personalizada con la Dra. Daniela Bravo, dermatóloga.',
     image: peelingImg.url,
-    alt: 'Peeling químico para exfoliación y renovación cutánea, tratamiento de manchas y acné en Vicente López',
+    alt: 'Peeling químico para exfoliación y renovación cutánea, tratamiento de manchas y acné en Vicente López y Zona Norte',
     intro: [
       'Los peelings químicos consisten en una exfoliación controlada de la piel mediante la aplicación de ácidos específicos. Al renovar las capas superficiales se estimula la producción de células nuevas y de colágeno.',
       'Son un recurso muy versátil en dermatología: mejoran la textura, unifican el tono, atenúan manchas, ayudan en el manejo del acné y de sus cicatrices, y suavizan signos iniciales de envejecimiento.',
-      'Existen distintas profundidades e ingredientes activos. En la consulta en Vicente López se elige el peeling adecuado según el fototipo, la sensibilidad y el objetivo de cada paciente, y se planifica la cantidad de sesiones necesarias.',
+      'Existen distintas profundidades e ingredientes activos. En la consulta en Vicente López se elige el peeling adecuado según el fototipo, la sensibilidad y el objetivo de cada paciente, y se planifica la cantidad de sesiones necesarias. También atendemos pacientes de la Zona Norte (San Isidro, Olivos, Martínez).',
     ],
     session: [
       'Evaluación de la piel y elección del tipo de peeling e intensidad.',
@@ -229,15 +231,15 @@ export const treatmentPages: TreatmentPageData[] = [
     slug: 'mesoterapia',
     name: 'Mesoterapia Facial y Capilar',
     h1: 'Mesoterapia Facial y Capilar en Vicente López',
-    title: 'Mesoterapia Facial y Capilar en Vicente López | Dra. Bravo',
+    title: 'Mesoterapia Facial y Capilar en Vicente López | Zona Norte | Dra. Bravo',
     metaDescription:
-      'Mesoterapia facial y capilar en Vicente López: microinyecciones de activos para revitalizar la piel y fortalecer el cabello. Turnos con la Dra. Daniela Bravo.',
+      'Mesoterapia facial y capilar en Vicente López y Zona Norte: microinyecciones de activos para revitalizar la piel y fortalecer el cabello. Turnos con la Dra. Daniela Bravo.',
     image: mesoImg.url,
-    alt: 'Mesoterapia facial y capilar en Vicente López, microinyecciones para revitalización de la piel',
+    alt: 'Mesoterapia facial y capilar en Vicente López y Zona Norte, microinyecciones para revitalización de la piel',
     intro: [
       'La mesoterapia es una técnica mínimamente invasiva que consiste en aplicar microinyecciones de principios activos directamente en la dermis o en el cuero cabelludo, donde son necesarios.',
       'A nivel facial se utilizan vitaminas, aminoácidos, antioxidantes y ácido hialurónico no reticulado para mejorar la hidratación profunda, la luminosidad y la elasticidad de la piel. A nivel capilar se emplean activos que fortalecen el folículo y acompañan el tratamiento de la caída del cabello.',
-      'Es un tratamiento progresivo y muy bien tolerado, que se planifica en sesiones sucesivas. En el consultorio de Vicente López la fórmula se adapta a las necesidades específicas de cada paciente.',
+      'Es un tratamiento progresivo y muy bien tolerado, que se planifica en sesiones sucesivas. En el consultorio de Vicente López la fórmula se adapta a las necesidades específicas de cada paciente, y también recibimos consultas de la Zona Norte (San Isidro, Olivos, Martínez).',
     ],
     session: [
       'Evaluación de la piel o del cuero cabelludo y selección de los activos a utilizar.',
@@ -290,4 +292,3 @@ export const cardTitleToSlug: Record<string, string> = {
   'Rellenos Dérmicos con Ácido Hialurónico': 'rellenos-dermicos',
   'Peelings Químicos - Renovación Cutánea': 'peelings-quimicos',
 };
-
