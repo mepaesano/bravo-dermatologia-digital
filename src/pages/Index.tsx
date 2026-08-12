@@ -9,12 +9,12 @@ import Footer from '../components/Footer';
 
 const Index = () => {
   React.useEffect(() => {
-    document.title = "Dra. Daniela Bravo | Dermatóloga en Vicente López y Zona Norte | Centro de Dermatología Estética";
+    document.title = "Dra. Daniela Bravo | Dermatóloga en Vicente López y Zona Norte | Dermatología Clínica y Estética";
     
     // Ensure proper meta description is set
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Dra. Daniela Bravo, dermatóloga especialista en Vicente López y Zona Norte. Centro estético con tratamientos de botox, mesoterapia, PRP, peelings químicos, rellenos dérmicos. Consultorio dermatológico en Vicente López y Capilla del Señor.');
+      metaDescription.setAttribute('content', 'Dra. Daniela Bravo, dermatóloga especialista en Vicente López y Zona Norte. Consultas médicas dermatológicas y tratamientos estéticos: botox, mesoterapia, PRP, peelings químicos, rellenos dérmicos. Consultorio dermatológico en Vicente López y Capilla del Señor.');
     }
 
     // Add breadcrumb structured data for better SEO

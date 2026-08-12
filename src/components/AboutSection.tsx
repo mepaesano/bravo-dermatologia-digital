@@ -36,6 +36,10 @@ const AboutSection = () => {
                 <p>
                   Su <strong>centro estético en Vicente López</strong> ofrece un abordaje personalizado que integra los tratamientos más modernos de <strong>dermatología estética</strong>, siempre priorizando la seguridad y los resultados naturales.
                 </p>
+
+                <p>
+                  Además de su práctica en dermatología estética, la Dra. Bravo atiende <strong>consultas médicas dermatológicas generales</strong>: diagnóstico y tratamiento de afecciones de la piel, control de lunares, acné, dermatitis, infecciones cutáneas y otras patologías dermatológicas.
+                </p>
               </div>
             </div>
 
