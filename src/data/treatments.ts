@@ -282,6 +282,210 @@ export const treatmentPages: TreatmentPageData[] = [
       },
     ],
   },
+  {
+    slug: 'bioestimulacion',
+    name: 'Bioestimulación Facial',
+    h1: 'Bioestimulación Facial en Vicente López',
+    title: 'Bioestimulación Facial en Vicente López | Zona Norte | Dra. Daniela Bravo',
+    metaDescription:
+      'Bioestimulación facial en Vicente López y Zona Norte: estimulación de colágeno y elastina para un rejuvenecimiento natural y progresivo con la Dra. Daniela Bravo, dermatóloga.',
+    image: bioImg.url,
+    alt: 'Bioestimulación facial para producción de colágeno y elastina, rejuvenecimiento natural en Vicente López y Zona Norte',
+    intro: [
+      'La bioestimulación facial es un tratamiento no invasivo que activa los procesos naturales de regeneración de la piel. En lugar de aportar volumen de forma inmediata, estimula a las propias células a producir colágeno y elastina.',
+      'El resultado es una mejora progresiva de la textura, la firmeza y la luminosidad del rostro, con un aspecto descansado y natural. Es especialmente útil en pieles con signos iniciales de envejecimiento, pérdida de tono o falta de brillo.',
+      'En el consultorio de Vicente López la bioestimulación se planifica luego de una evaluación dermatológica que define el activo y la cantidad de sesiones más adecuadas para cada piel. También atendemos pacientes de la Zona Norte (San Isidro, Olivos, Martínez).',
+    ],
+    session: [
+      'Evaluación de la piel y definición del plan de bioestimulación.',
+      'Limpieza profunda y antisepsia de la zona a tratar.',
+      'Aplicación de crema anestésica tópica cuando es necesario.',
+      'Aplicación del bioestimulador mediante microinyecciones distribuidas de forma uniforme.',
+      'La sesión dura entre 30 y 45 minutos. Habitualmente se indican 2 a 3 sesiones separadas por 4 a 6 semanas.',
+    ],
+    aftercare: [
+      'Evitar maquillaje y cosméticos durante las primeras horas.',
+      'Usar protector solar a diario y evitar la exposición solar directa.',
+      'Suspender actividad física intensa, sauna y pileta por 48 horas.',
+      'No realizar masajes ni tratamientos con aparatología en la zona durante 2 semanas.',
+      'Puede haber enrojecimiento leve o pequeñas pápulas que ceden en 24 a 48 horas.',
+    ],
+    faqs: [
+      {
+        question: '¿En cuánto tiempo se ven los resultados de la bioestimulación?',
+        answer:
+          'Los cambios son progresivos porque dependen de la producción de colágeno propio. Suelen notarse a partir de las 4 a 6 semanas y continúan mejorando durante los meses siguientes.',
+      },
+      {
+        question: '¿Cuántas sesiones necesito?',
+        answer:
+          'Lo habitual son 2 a 3 sesiones separadas por 4 a 6 semanas, con mantenimiento posterior según la respuesta de cada piel. El esquema se define en la consulta.',
+      },
+      {
+        question: '¿Es lo mismo que un relleno con ácido hialurónico?',
+        answer:
+          'No. El relleno aporta volumen de manera inmediata, mientras que la bioestimulación busca mejorar la calidad de la piel estimulando su propia regeneración. Pueden combinarse dentro de un mismo plan.',
+      },
+      {
+        question: '¿Puedo retomar mis actividades el mismo día?',
+        answer:
+          'Sí, es un procedimiento ambulatorio. Solo hay que respetar las indicaciones de las primeras 48 horas en cuanto a sol y actividad física.',
+      },
+    ],
+  },
+  {
+    slug: 'mesolifting',
+    name: 'Mesolifting',
+    h1: 'Mesolifting en Vicente López',
+    title: 'Mesolifting en Vicente López | Lifting sin Cirugía | Zona Norte',
+    metaDescription:
+      'Mesolifting en Vicente López y Zona Norte: microinyecciones de vitaminas y antioxidantes para un efecto lifting natural sin cirugía. Turnos con la Dra. Daniela Bravo.',
+    image: mesoliftImg.url,
+    alt: 'Mesolifting con vitaminas y aminoácidos, lifting natural sin cirugía en Vicente López y Zona Norte',
+    intro: [
+      'El mesolifting es un tratamiento que combina vitaminas, aminoácidos y antioxidantes aplicados mediante microinyecciones superficiales para revitalizar el rostro y generar un efecto tensor natural.',
+      'A diferencia de un procedimiento quirúrgico, no implica cortes ni tiempo de recuperación: mejora la firmeza cutánea, aporta luminosidad y devuelve al rostro un aspecto más descansado de manera gradual.',
+      'Es una alternativa muy elegida por pacientes que buscan un resultado sutil y progresivo. En el consultorio de Vicente López la fórmula y la cantidad de sesiones se definen según las necesidades de cada piel, y también recibimos consultas de la Zona Norte (San Isidro, Olivos, Martínez).',
+    ],
+    session: [
+      'Evaluación de la piel y definición del cóctel de activos a utilizar.',
+      'Limpieza y antisepsia de la zona; crema anestésica tópica si es necesario.',
+      'Microinyecciones superficiales distribuidas de manera uniforme en el rostro, cuello o escote.',
+      'Aplicación final de productos calmantes y protector solar.',
+      'La sesión dura entre 20 y 30 minutos. Habitualmente se indican 4 a 6 sesiones cada 1 a 2 semanas.',
+    ],
+    aftercare: [
+      'No aplicar maquillaje ni cosméticos durante las primeras horas.',
+      'Usar protector solar a diario y evitar la exposición solar directa.',
+      'Suspender actividad física intensa, sauna y pileta por 24 a 48 horas.',
+      'No exfoliar ni frotar la zona tratada durante los primeros días.',
+      'Es normal un enrojecimiento leve o pequeñas pápulas que ceden en pocas horas.',
+    ],
+    faqs: [
+      {
+        question: '¿El mesolifting reemplaza a un lifting quirúrgico?',
+        answer:
+          'No. El mesolifting mejora la firmeza, la hidratación y la luminosidad de la piel con un efecto tensor natural, pero no corrige la flacidez avanzada como lo haría una cirugía.',
+      },
+      {
+        question: '¿Cuántas sesiones se necesitan?',
+        answer:
+          'Lo habitual son 4 a 6 sesiones iniciales cada 1 o 2 semanas, con mantenimiento posterior. El esquema definitivo se establece en la consulta.',
+      },
+      {
+        question: '¿Duele?',
+        answer:
+          'La molestia es leve porque se utilizan agujas muy finas y aplicaciones superficiales. Cuando es necesario se aplica crema anestésica previa.',
+      },
+      {
+        question: '¿Se puede combinar con otros tratamientos?',
+        answer:
+          'Sí, se combina frecuentemente con peelings, PRP, bioestimulación o toxina botulínica dentro de un plan dermatológico integral.',
+      },
+    ],
+  },
+  {
+    slug: 'criocirugia',
+    name: 'Criocirugía',
+    h1: 'Criocirugía en Vicente López',
+    title: 'Criocirugía en Vicente López | Zona Norte | Dra. Daniela Bravo',
+    metaDescription:
+      'Criocirugía en Vicente López y Zona Norte: tratamiento con frío terapéutico para verrugas, queratosis actínicas y lesiones cutáneas. Consulta con la Dra. Daniela Bravo, dermatóloga.',
+    image: crioImg.url,
+    alt: 'Criocirugía con frío terapéutico para tratamiento de verrugas y queratosis en Vicente López y Zona Norte',
+    intro: [
+      'La criocirugía es una técnica dermatológica que utiliza frío extremo, habitualmente nitrógeno líquido, para destruir de manera controlada lesiones cutáneas. Es un procedimiento ambulatorio, rápido y preciso.',
+      'Se indica para verrugas, queratosis actínicas, queratosis seborreicas y otras lesiones benignas, y en casos seleccionados también para algunas lesiones malignas superficiales, siempre luego de un diagnóstico dermatológico adecuado.',
+      'En el consultorio de Vicente López cada lesión se evalúa clínicamente —y con dermatoscopía cuando corresponde— antes de definir la criocirugía como tratamiento. También atendemos pacientes de la Zona Norte (San Isidro, Olivos, Martínez).',
+    ],
+    session: [
+      'Evaluación clínica de la lesión y confirmación de la indicación de criocirugía.',
+      'Antisepsia de la zona a tratar.',
+      'Aplicación del frío mediante spray o aplicador, en ciclos de pocos segundos controlados por la médica.',
+      'Se puede repetir el ciclo en la misma sesión según el tipo y el espesor de la lesión.',
+      'La sesión dura pocos minutos y no requiere internación. Algunas lesiones necesitan más de una sesión.',
+    ],
+    aftercare: [
+      'Mantener la zona limpia y seca; lavar suavemente con agua y jabón neutro.',
+      'No arrancar la ampolla ni la costra que se forma: debe desprenderse sola.',
+      'Aplicar la crema o el antiséptico indicado según la evolución de la zona.',
+      'Evitar la exposición solar directa sobre la zona y usar protector solar una vez cicatrizada.',
+      'Consultar si aparece dolor intenso, secreción o signos de infección.',
+    ],
+    faqs: [
+      {
+        question: '¿Duele la criocirugía?',
+        answer:
+          'Se siente una sensación de frío intenso o ardor durante unos segundos, que se tolera bien y disminuye rápidamente al finalizar la aplicación.',
+      },
+      {
+        question: '¿Cuánto tarda en curarse la zona tratada?',
+        answer:
+          'Habitualmente se forma una ampolla o costra que se desprende en 1 a 3 semanas, según la zona y el tamaño de la lesión.',
+      },
+      {
+        question: '¿Deja marca?',
+        answer:
+          'Puede quedar una zona transitoriamente más clara o rosada. En la mayoría de los casos la piel recupera su aspecto habitual con el tiempo y el cuidado solar adecuado.',
+      },
+      {
+        question: '¿Cuántas sesiones necesito?',
+        answer:
+          'Muchas lesiones se resuelven en una sola sesión. Las verrugas y lesiones más gruesas pueden requerir sesiones adicionales separadas por algunas semanas.',
+      },
+    ],
+  },
+  {
+    slug: 'dermatoscopia',
+    name: 'Dermatoscopía',
+    h1: 'Dermatoscopía y Control de Lunares en Vicente López',
+    title: 'Dermatoscopía y Control de Lunares en Vicente López | Zona Norte',
+    metaDescription:
+      'Dermatoscopía y control de lunares en Vicente López y Zona Norte: evaluación con dermatoscopio para detección temprana de melanoma con la Dra. Daniela Bravo, dermatóloga.',
+    image: dermaImg.url,
+    alt: 'Dermatoscopía para diagnóstico de lunares y detección de melanoma en Vicente López y Zona Norte',
+    intro: [
+      'La dermatoscopía es un examen no invasivo que permite observar los lunares y las lesiones de la piel con gran aumento y con iluminación especial, revelando estructuras que no se ven a simple vista.',
+      'Es la herramienta central del control dermatológico preventivo: mejora notablemente la precisión diagnóstica y permite la detección temprana del melanoma y de otros tipos de cáncer de piel, cuando el tratamiento es más simple y efectivo.',
+      'En el consultorio de Vicente López el control de lunares se realiza de manera sistemática, registrando las lesiones que requieren seguimiento en el tiempo. También atendemos pacientes de la Zona Norte (San Isidro, Olivos, Martínez) que buscan un control anual de su piel.',
+    ],
+    session: [
+      'Consulta dermatológica con antecedentes personales y familiares de cáncer de piel.',
+      'Examen de la piel de cuerpo completo, incluyendo cuero cabelludo, palmas, plantas y uñas.',
+      'Evaluación de cada lesión con el dermatoscopio, sin dolor y sin necesidad de preparación previa.',
+      'Registro de las lesiones que requieren seguimiento para comparar en controles futuros.',
+      'Indicación del plan: control periódico, biopsia o extirpación según los hallazgos. La consulta dura entre 20 y 30 minutos.',
+    ],
+    aftercare: [
+      'La dermatoscopía no requiere recuperación: se puede retomar la actividad normal de inmediato.',
+      'Mantener el uso diario de protector solar de amplio espectro.',
+      'Evitar la exposición solar en las horas centrales del día y usar ropa y sombrero como protección.',
+      'Realizar autoexamen mensual de la piel y consultar ante cualquier lunar que cambie de forma, color o tamaño.',
+      'Respetar la frecuencia de control indicada, habitualmente anual o menor según el riesgo.',
+    ],
+    faqs: [
+      {
+        question: '¿Cada cuánto tengo que controlarme los lunares?',
+        answer:
+          'En general una vez al año. En pacientes con muchos lunares, antecedentes familiares de melanoma o lesiones en seguimiento, el control puede ser cada 6 meses o según indicación médica.',
+      },
+      {
+        question: '¿La dermatoscopía duele o requiere preparación?',
+        answer:
+          'No. Es un estudio indoloro y no invasivo: solo se apoya el dermatoscopio sobre la piel. No necesita preparación previa, aunque conviene asistir sin maquillaje ni esmalte en las uñas.',
+      },
+      {
+        question: '¿Qué señales de alarma debo mirar en un lunar?',
+        answer:
+          'Cambios en la forma, el color o el tamaño, bordes irregulares, asimetría, picazón, sangrado o una lesión que se ve distinta al resto. Ante cualquiera de estos signos conviene consultar.',
+      },
+      {
+        question: '¿Qué pasa si se encuentra una lesión sospechosa?',
+        answer:
+          'Se indica el paso siguiente según el caso: seguimiento con imágenes comparativas, biopsia o extirpación para estudio histopatológico. Todo se explica en la misma consulta.',
+      },
+    ],
+  },
 ];
 
 export const treatmentPagesBySlug = Object.fromEntries(
@@ -295,4 +499,8 @@ export const cardTitleToSlug: Record<string, string> = {
   'Toxina Botulínica en Vicente López': 'toxina-botulinica',
   'Rellenos Dérmicos con Ácido Hialurónico': 'rellenos-dermicos',
   'Peelings Químicos - Renovación Cutánea': 'peelings-quimicos',
+  'Bioestimulación Facial - Rejuvenecimiento Natural': 'bioestimulacion',
+  'Mesolifting - Lifting Natural sin Cirugía': 'mesolifting',
+  'Criocirugía - Tratamiento con Frío Terapéutico': 'criocirugia',
+  'Dermatoscopía - Diagnóstico Avanzado de Lunares': 'dermatoscopia',
 };
