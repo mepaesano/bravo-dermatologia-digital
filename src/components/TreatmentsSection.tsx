@@ -23,6 +23,7 @@ type Treatment = {
 
 const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: number }) => {
   const { ref, visible } = useReveal<HTMLElement>();
+  const slug = cardTitleToSlug[treatment.title];
 
   return (
     <figure
