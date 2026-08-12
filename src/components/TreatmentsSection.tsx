@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useReveal } from '@/hooks/use-reveal';
 import dermaImg from '@/assets/11-tratamiento-dermatoscopia.webp.asset.json';
 import prpImg from '@/assets/03-tratamiento-prp.webp.asset.json';
 import mesoImg from '@/assets/04-tratamiento-mesoterapia.webp.asset.json';
@@ -9,6 +10,43 @@ import rellenosImg from '@/assets/07-tratamiento-rellenos-dermicos.webp.asset.js
 import peelingImg from '@/assets/08-tratamiento-peeling-quimico.webp.asset.json';
 import mesoliftImg from '@/assets/09-tratamiento-mesolifting.webp.asset.json';
 import crioImg from '@/assets/10-tratamiento-criocirugia.webp.asset.json';
+
+type Treatment = {
+  title: string;
+  description: string;
+  image: string;
+  alt: string;
+};
+
+const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: number }) => {
+  const { ref, visible } = useReveal<HTMLElement>();
+
+  return (
+    <figure
+      ref={ref}
+      style={{ transitionDelay: `${(index % 3) * 90}ms` }}
+      className={`tratamiento-card reveal ${visible ? 'reveal-visible' : ''} relative bg-blanco-calido rounded-2xl border border-rosa-empolvado overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl hover:-translate-y-1.5 hover:border-rosa-coral duration-300`}
+    >
+      <img
+        src={treatment.image}
+        alt={treatment.alt}
+        className="tratamiento-img w-full h-40 md:h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+        loading="lazy"
+        decoding="async"
+        width="400"
+        height="192"
+      />
+      <figcaption className="p-4 md:p-6">
+        <h3 className="tratamiento-nombre text-base md:text-lg font-medium text-gris-muy-oscuro leading-tight transition-colors duration-300 group-hover:text-rosa-coral">
+          {treatment.title}
+        </h3>
+        <p className="tratamiento-desc absolute top-0 left-0 w-full h-full bg-blanco-calido/95 backdrop-blur-sm p-4 md:p-6 text-gris-muy-oscuro font-light leading-relaxed text-sm md:text-base opacity-0 transform translate-y-[-10px] transition-all duration-300 ease-out flex items-center justify-center text-center group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:translate-y-0">
+          {treatment.description}
+        </p>
+      </figcaption>
+    </figure>
+  );
+};
 
 const TreatmentsSection = () => {
   const treatments = [
