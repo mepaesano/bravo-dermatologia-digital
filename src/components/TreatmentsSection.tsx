@@ -24,8 +24,7 @@ type Treatment = {
 const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: number }) => {
   const { ref, visible } = useReveal<HTMLElement>();
   const slug = cardTitleToSlug[treatment.title];
-
-  return (
+  const cardContent = (
     <figure
       ref={ref}
       style={{ transitionDelay: `${(index % 3) * 90}ms` }}
@@ -45,14 +44,10 @@ const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: numb
           {treatment.title}
         </h3>
         {slug && (
-          <Link
-            to={`/tratamientos/${slug}`}
-            className="relative z-10 mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-rosa-coral hover:gap-2.5 transition-all duration-300"
-            aria-label={`Ver más sobre ${treatment.title}`}
-          >
+          <span className="relative z-10 mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-rosa-coral group-hover:gap-2.5 transition-all duration-300">
             Ver más
             <ArrowRight size={16} aria-hidden="true" />
-          </Link>
+          </span>
         )}
         <p
           className={`tratamiento-desc pointer-events-none absolute top-0 left-0 right-0 ${
@@ -63,6 +58,18 @@ const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: numb
         </p>
       </figcaption>
     </figure>
+  );
+
+  if (!slug) return cardContent;
+
+  return (
+    <Link
+      to={`/tratamientos/${slug}`}
+      className="block rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-rosa-coral focus-visible:ring-offset-2"
+      aria-label={`Ver más sobre ${treatment.title}`}
+    >
+      {cardContent}
+    </Link>
   );
 };
 
