@@ -494,7 +494,7 @@ export const treatmentPagesBySlug = Object.fromEntries(
 export const cardTitleToSlug: Record<string, string> = {
   'PRP (Plasma Rico en Plaquetas) – Facial y Capilar': 'prp',
   'Mesoterapia Facial y Capilar en Vicente López': 'mesoterapia',
-  'Toxina Botulínica en Vicente López': 'toxina-botulinica',
+  'Toxina Botulínica en Vicente López y Zona Norte': 'toxina-botulinica',
   'Rellenos Dérmicos con Ácido Hialurónico': 'rellenos-dermicos',
   'Peelings Químicos - Renovación Cutánea': 'peelings-quimicos',
   'Bioestimulación Facial - Rejuvenecimiento Natural': 'bioestimulacion',
