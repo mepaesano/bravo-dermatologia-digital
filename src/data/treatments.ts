@@ -171,7 +171,7 @@ export const treatmentPages: TreatmentPageData[] = [
       {
         question: '¿El PRP sirve para la caída del cabello?',
         answer:
-          'Sí, es un tratamiento indicado como coadyuvante en alopecia androgenética y en caída difusa, siempre luego de un diagnóstico dermatológico que identifique la causa.',
+          'Sí, es un tratamiento indicado como coadyuvante en alopecias diversas, siempre luego de un diagnóstico médico que identifique la causa.',
       },
       {
         question: '¿Tiene riesgo de rechazo o alergia?',
