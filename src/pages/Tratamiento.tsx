@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useParams, Navigate } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -32,8 +32,6 @@ const RevealBlock = ({
 };
 
 const TreatmentContent = ({ treatment }: { treatment: TreatmentPageData }) => {
-  const navigate = useNavigate();
-
   React.useEffect(() => {
     document.title = treatment.title;
 
@@ -211,14 +209,15 @@ const TreatmentContent = ({ treatment }: { treatment: TreatmentPageData }) => {
                   Coordinamos una consulta para evaluar tu piel y definir si este tratamiento es el
                   indicado para vos.
                 </p>
-                <button
-                  type="button"
-                  onClick={() => navigate('/turnos')}
-                  className="bg-rosa-coral text-blanco px-8 md:px-12 py-3 md:py-4 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg text-sm md:text-base"
-                  aria-label={`Reservar turno para ${treatment.name} en Vicente López`}
+                <a
+                  href="https://wa.me/5491133681890?text=Hola%2C%20quiero%20consultar%20por%20un%20turno%20con%20la%20Dra.%20Bravo%20en%20Vicente%20L%C3%B3pez"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-rosa-coral text-blanco px-8 md:px-12 py-3 md:py-4 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg text-sm md:text-base"
+                  aria-label={`Reservar turno para ${treatment.name} en Vicente López por WhatsApp`}
                 >
                   Reservar turno
-                </button>
+                </a>
               </section>
             </RevealBlock>
           </div>

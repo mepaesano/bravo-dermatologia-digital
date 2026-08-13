@@ -94,7 +94,7 @@ const TreatmentsSection = () => {
       alt: "Bioestimulación facial para producción de colágeno y elastina, rejuvenecimiento natural en Vicente López y Zona Norte"
     },
     {
-      title: "Toxina Botulínica en Vicente López",
+      title: "Toxina Botulínica en Vicente López y Zona Norte",
       description: "Aplicación profesional de toxina botulínica para suavizar arrugas de expresión y prevenir líneas futuras. Tratamiento seguro y efectivo para frente, entrecejo y patas de gallo. Resultados naturales que respetan la expresión facial.",
       image: botoxImg.url,
       alt: "Aplicación de toxina botulínica en Vicente López y Zona Norte para arrugas de expresión, frente y entrecejo"
