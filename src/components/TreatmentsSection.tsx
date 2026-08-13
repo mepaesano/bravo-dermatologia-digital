@@ -28,7 +28,7 @@ const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: numb
     <figure
       ref={ref}
       style={{ transitionDelay: `${(index % 3) * 90}ms` }}
-      className={`tratamiento-card reveal ${visible ? 'reveal-visible' : ''} relative bg-blanco-calido rounded-2xl border border-rosa-empolvado overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl hover:-translate-y-1.5 hover:border-rosa-coral duration-300`}
+      className={`tratamiento-card reveal ${visible ? 'reveal-visible' : ''} relative bg-blanco-calido rounded-2xl border border-rosa-empolvado h-full flex flex-col overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl hover:-translate-y-1.5 hover:border-rosa-coral duration-300`}
     >
       <img
         src={treatment.image}
@@ -39,12 +39,12 @@ const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: numb
         width="400"
         height="192"
       />
-      <figcaption className="p-4 md:p-6">
-        <h3 className="tratamiento-nombre text-base md:text-lg font-medium text-gris-muy-oscuro leading-tight transition-colors duration-300 group-hover:text-rosa-coral">
+      <figcaption className="relative flex flex-1 flex-col p-4 md:p-6">
+        <h3 className="tratamiento-nombre min-h-[2.75rem] md:min-h-[3.5rem] text-base md:text-lg font-medium text-gris-muy-oscuro leading-tight transition-colors duration-300 group-hover:text-rosa-coral">
           {treatment.title}
         </h3>
         {slug && (
-          <span className="relative z-10 mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-rosa-coral group-hover:gap-2.5 transition-all duration-300">
+          <span className="relative z-10 mt-auto pt-3 inline-flex items-center gap-1.5 text-sm font-medium text-rosa-coral group-hover:gap-2.5 transition-all duration-300">
             Ver más
             <ArrowRight size={16} aria-hidden="true" />
           </span>
@@ -65,7 +65,7 @@ const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: numb
   return (
     <Link
       to={`/tratamientos/${slug}`}
-      className="block rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-rosa-coral focus-visible:ring-offset-2"
+      className="block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-rosa-coral focus-visible:ring-offset-2"
       aria-label={`Ver más sobre ${treatment.title}`}
     >
       {cardContent}
