@@ -39,12 +39,12 @@ const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: numb
         width="400"
         height="192"
       />
-      <figcaption className="relative flex flex-1 flex-col p-4 md:p-6">
+      <figcaption className="flex flex-1 flex-col p-4 md:p-6">
         <h3 className="tratamiento-nombre min-h-[2.75rem] md:min-h-[3.5rem] text-base md:text-lg font-medium text-gris-muy-oscuro leading-tight transition-colors duration-300 group-hover:text-rosa-coral">
           {treatment.title}
         </h3>
         {slug && (
-          <span className="relative z-10 mt-auto pt-3 inline-flex items-center gap-1.5 text-sm font-medium text-rosa-coral group-hover:gap-2.5 transition-all duration-300">
+          <span className="relative z-10 mt-auto pt-3 self-start inline-flex items-center gap-1.5 text-sm font-medium text-rosa-coral group-hover:gap-2.5 transition-all duration-300">
             Ver más
             <ArrowRight size={16} aria-hidden="true" />
           </span>
