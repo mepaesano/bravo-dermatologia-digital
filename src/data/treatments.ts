@@ -424,7 +424,7 @@ export const treatmentPages: TreatmentPageData[] = [
       {
         question: '¿Deja marca?',
         answer:
-          'Puede quedar una zona transitoriamente más clara o rosada. En la mayoría de los casos la piel recupera su aspecto habitual con el tiempo y el cuidado solar adecuado.',
+          'Dependiendo de la lesión a tratar, puede dejar alguna marca residual.',
       },
       {
         question: '¿Cuántas sesiones necesito?',
@@ -494,7 +494,7 @@ export const treatmentPagesBySlug = Object.fromEntries(
 export const cardTitleToSlug: Record<string, string> = {
   'PRP (Plasma Rico en Plaquetas) – Facial y Capilar': 'prp',
   'Mesoterapia Facial y Capilar en Vicente López': 'mesoterapia',
-  'Toxina Botulínica en Vicente López y Zona Norte': 'toxina-botulinica',
+  'Toxina Botulínica - Suavizar las Arrugas de Expresión': 'toxina-botulinica',
   'Rellenos Dérmicos con Ácido Hialurónico': 'rellenos-dermicos',
   'Peelings Químicos - Renovación Cutánea': 'peelings-quimicos',
   'Bioestimulación Facial - Rejuvenecimiento Natural': 'bioestimulacion',
