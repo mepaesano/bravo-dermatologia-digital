@@ -100,10 +100,10 @@ const TreatmentsSection = () => {
       alt: "Aplicación de toxina botulínica en Vicente López y Zona Norte para arrugas de expresión, frente y entrecejo"
     },
     {
-      title: "Rellenos Dérmicos con Ácido Hialurónico",
-      description: "Corrección de surcos nasogenianos, aumento de volumen en labios y pómulos con ácido hialurónico de alta calidad. Restaura la armonía facial de manera natural y segura. Técnica precisa para resultados equilibrados y duraderos.",
-      image: rellenosImg.url,
-      alt: "Rellenos dérmicos con ácido hialurónico para labios y pómulos en Vicente López y Zona Norte, dermatología estética"
+      title: "Criocirugía - Tratamiento con Frío Terapéutico",
+      description: "Técnica dermatológica que utiliza frío extremo para eliminar lesiones cutáneas benignas y malignas. Procedimiento preciso y efectivo para verrugas, queratosis actínicas y otros tumores de piel. Mínimo tiempo de recuperación.",
+      image: crioImg.url,
+      alt: "Criocirugía con frío terapéutico para tratamiento de verrugas y queratosis en Vicente López y Zona Norte"
     },
     {
       title: "Peelings Químicos - Renovación Cutánea",
@@ -118,10 +118,10 @@ const TreatmentsSection = () => {
       alt: "Mesolifting con vitaminas y aminoácidos, lifting natural sin cirugía en Vicente López y Zona Norte"
     },
     {
-      title: "Criocirugía - Tratamiento con Frío Terapéutico",
-      description: "Técnica dermatológica que utiliza frío extremo para eliminar lesiones cutáneas benignas y malignas. Procedimiento preciso y efectivo para verrugas, queratosis actínicas y otros tumores de piel. Mínimo tiempo de recuperación.",
-      image: crioImg.url,
-      alt: "Criocirugía con frío terapéutico para tratamiento de verrugas y queratosis en Vicente López y Zona Norte"
+      title: "Rellenos Dérmicos con Ácido Hialurónico",
+      description: "Corrección de surcos nasogenianos, aumento de volumen en labios y pómulos con ácido hialurónico de alta calidad. Restaura la armonía facial de manera natural y segura. Técnica precisa para resultados equilibrados y duraderos.",
+      image: rellenosImg.url,
+      alt: "Rellenos dérmicos con ácido hialurónico para labios y pómulos en Vicente López y Zona Norte, dermatología estética"
     },
     {
       title: "Dermatoscopía - Diagnóstico Avanzado de Lunares",
