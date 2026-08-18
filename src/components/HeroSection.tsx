@@ -113,7 +113,7 @@ const HeroSection = () => {
                 height="600"
                 loading="eager"
                 decoding="async"
-                fetchPriority="high"
+                {...{ fetchpriority: "high" }}
               />
               <div className="absolute bottom-4 left-4 sm:bottom-6 sm:-left-2 max-w-[16rem] bg-white rounded-xl shadow-soft px-4 py-3 flex items-start gap-3">
                 <Clock size={18} className="text-sage mt-0.5 shrink-0" aria-hidden="true" />

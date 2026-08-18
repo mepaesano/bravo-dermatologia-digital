@@ -86,8 +86,12 @@ const Header = () => {
   const linkClass =
     'text-ink-2 hover:text-sage transition-colors inline-flex items-center min-h-[44px]';
 
+  const isHome = location.pathname === '/';
+
   return (
-    <header
+    <>
+      {!isHome && <div className="h-[68px] md:h-[76px]" aria-hidden="true" />}
+      <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
         scrolled
           ? 'bg-bone/90 backdrop-blur-md border-b border-line'
@@ -212,7 +216,8 @@ const Header = () => {
           </div>
         </div>
       )}
-    </header>
+      </header>
+    </>
   );
 };
 
