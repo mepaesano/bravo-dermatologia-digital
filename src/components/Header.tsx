@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 
@@ -10,14 +10,62 @@ const sectionLinks = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  const panelRef = useRef<HTMLDivElement | null>(null);
+  const toggleRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  // Focus trap + Escape for the mobile panel
+  useEffect(() => {
+    if (!isMenuOpen) return;
+
+    const panel = panelRef.current;
+    const focusables = () =>
+      Array.from(
+        panel?.querySelectorAll<HTMLElement>('a[href], button:not([disabled])') ?? []
+      );
+
+    focusables()[0]?.focus();
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsMenuOpen(false);
+        toggleRef.current?.focus();
+        return;
+      }
+      if (event.key !== 'Tab') return;
+      const items = focusables();
+      if (items.length === 0) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener('keydown', onKeyDown);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKeyDown);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [isMenuOpen]);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleSectionClick = (
@@ -35,24 +83,34 @@ const Header = () => {
     }
   };
 
-  const linkClass = 'text-gris-oscuro hover:text-rosa-coral transition-colors font-light';
+  const linkClass =
+    'text-ink-2 hover:text-sage transition-colors inline-flex items-center min-h-[44px]';
+
+  const isHome = location.pathname === '/';
+  const solid = scrolled || !isHome;
 
   return (
-    <header className="bg-blanco border-b border-rosa-empolvado sticky top-0 z-50">
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex justify-between items-center">
-          <div className="flex-1 md:flex-none text-center md:text-left">
-            <a
-              href="/#inicio"
-              onClick={(e) => handleSectionClick(e, 'inicio')}
-              className="text-2xl md:text-3xl font-light text-gris-muy-oscuro tracking-wide cursor-pointer hover:text-rosa-coral transition-colors"
-            >
-              Dra. Daniela Bravo
-            </a>
-          </div>
+    <>
+      {!isHome && <div className="h-[68px] md:h-[76px]" aria-hidden="true" />}
+      <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
+        solid
+          ? 'bg-bone/90 backdrop-blur-md border-b border-line'
+          : 'bg-transparent border-b border-transparent'
+      }`}
+    >
+      <div className="container mx-auto px-4 md:px-6 py-3 md:py-4">
+        <div className="flex justify-between items-center gap-4">
+          <a
+            href="/#inicio"
+            onClick={(e) => handleSectionClick(e, 'inicio')}
+            className="font-display text-xl md:text-2xl text-ink hover:text-sage transition-colors"
+          >
+            Dra. Daniela Bravo
+          </a>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          {/* Desktop */}
+          <nav className="hidden md:flex items-center gap-7">
             {sectionLinks.map((item) => (
               <a
                 key={item.id}
@@ -63,7 +121,7 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            <Link to="/turnos" onClick={() => setIsMenuOpen(false)} className={linkClass}>
+            <Link to="/turnos" className={linkClass}>
               Turnos
             </Link>
             <a
@@ -73,51 +131,94 @@ const Header = () => {
             >
               Consultorios
             </a>
+            <Link
+              to="/turnos"
+              className={`inline-flex items-center justify-center min-h-[44px] bg-clay text-white px-6 py-2 rounded-full font-medium shadow-soft transition-opacity duration-200 ${
+                solid ? 'opacity-100' : 'opacity-0 pointer-events-none'
+              }`}
+              aria-hidden={!solid}
+              tabIndex={solid ? 0 : -1}
+            >
+              Reservar turno
+            </Link>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile toggle */}
           <button
+            ref={toggleRef}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-gris-oscuro"
+            className="md:hidden inline-flex items-center justify-center min-h-[44px] min-w-[44px] text-ink"
             aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className="md:hidden mt-6 pb-4 border-t border-rosa-empolvado pt-4">
-            <div className="flex flex-col space-y-4 text-center">
-              {sectionLinks.map((item) => (
-                <a
-                  key={item.id}
-                  href={`/#${item.id}`}
-                  onClick={(e) => handleSectionClick(e, item.id)}
-                  className={`${linkClass} py-2`}
-                >
-                  {item.label}
-                </a>
-              ))}
-              <Link
-                to="/turnos"
-                onClick={() => setIsMenuOpen(false)}
-                className={`${linkClass} py-2`}
-              >
-                Turnos
-              </Link>
-              <a
-                href="/#consultorios"
-                onClick={(e) => handleSectionClick(e, 'consultorios')}
-                className={`${linkClass} py-2`}
-              >
-                Consultorios
-              </a>
-            </div>
-          </nav>
-        )}
       </div>
-    </header>
+
+      {/* Mobile full-screen panel */}
+      {isMenuOpen && (
+        <div
+          ref={panelRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menú de navegación"
+          className="md:hidden fixed inset-0 z-50 bg-bone flex flex-col"
+        >
+          <div className="flex justify-between items-center px-4 py-3 border-b border-line">
+            <span className="font-display text-xl text-ink">Dra. Daniela Bravo</span>
+            <button
+              onClick={() => {
+                setIsMenuOpen(false);
+                toggleRef.current?.focus();
+              }}
+              className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] text-ink"
+              aria-label="Cerrar menú"
+            >
+              <X size={24} />
+            </button>
+          </div>
+
+          <nav className="flex-1 flex flex-col gap-2 px-6 py-8">
+            {sectionLinks.map((item) => (
+              <a
+                key={item.id}
+                href={`/#${item.id}`}
+                onClick={(e) => handleSectionClick(e, item.id)}
+                className="font-display text-2xl text-ink py-3"
+              >
+                {item.label}
+              </a>
+            ))}
+            <Link
+              to="/turnos"
+              onClick={() => setIsMenuOpen(false)}
+              className="font-display text-2xl text-ink py-3"
+            >
+              Turnos
+            </Link>
+            <a
+              href="/#consultorios"
+              onClick={(e) => handleSectionClick(e, 'consultorios')}
+              className="font-display text-2xl text-ink py-3"
+            >
+              Consultorios
+            </a>
+          </nav>
+
+          <div className="px-6 pb-10">
+            <Link
+              to="/turnos"
+              onClick={() => setIsMenuOpen(false)}
+              className="flex items-center justify-center min-h-[48px] bg-clay text-white px-6 py-3 rounded-full font-medium shadow-soft"
+            >
+              Reservar turno
+            </Link>
+          </div>
+        </div>
+      )}
+      </header>
+    </>
   );
 };
 
