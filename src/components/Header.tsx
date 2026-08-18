@@ -87,13 +87,14 @@ const Header = () => {
     'text-ink-2 hover:text-sage transition-colors inline-flex items-center min-h-[44px]';
 
   const isHome = location.pathname === '/';
+  const solid = scrolled || !isHome;
 
   return (
     <>
       {!isHome && <div className="h-[68px] md:h-[76px]" aria-hidden="true" />}
       <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
-        scrolled
+        solid
           ? 'bg-bone/90 backdrop-blur-md border-b border-line'
           : 'bg-transparent border-b border-transparent'
       }`}
@@ -133,10 +134,10 @@ const Header = () => {
             <Link
               to="/turnos"
               className={`inline-flex items-center justify-center min-h-[44px] bg-clay text-white px-6 py-2 rounded-full font-medium shadow-soft transition-opacity duration-200 ${
-                scrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                solid ? 'opacity-100' : 'opacity-0 pointer-events-none'
               }`}
-              aria-hidden={!scrolled}
-              tabIndex={scrolled ? 0 : -1}
+              aria-hidden={!solid}
+              tabIndex={solid ? 0 : -1}
             >
               Reservar turno
             </Link>
