@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { trackWhatsAppVicenteLopez } from '@/lib/trackWhatsApp';
 
 const OFFICES = [
   {
