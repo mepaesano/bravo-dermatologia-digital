@@ -1,9 +1,13 @@
 
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
+import { trackWhatsAppVicenteLopez } from '../lib/trackWhatsApp';
 
 const AppointmentSection = () => {
   const openWhatsApp = (phoneNumber: string, location: string) => {
+    if (phoneNumber === '5491133681890') {
+      trackWhatsAppVicenteLopez();
+    }
     const message = encodeURIComponent(`Hola, me gustaría solicitar un turno en ${location} con la Dra. Daniela Bravo`);
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
