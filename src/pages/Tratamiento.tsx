@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { treatmentPagesBySlug, type TreatmentPageData } from '@/data/treatments';
+import { trackWhatsAppVicenteLopez } from '@/lib/trackWhatsApp';
 
 const BASE_URL = 'https://dradanielabravo.com';
 const DEFAULT_DESCRIPTION =
@@ -213,6 +214,7 @@ const TreatmentContent = ({ treatment }: { treatment: TreatmentPageData }) => {
                   href="https://wa.me/5491133681890?text=Hola%2C%20quiero%20consultar%20por%20un%20turno%20con%20la%20Dra.%20Bravo%20en%20Vicente%20L%C3%B3pez"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppVicenteLopez()}
                   className="inline-block bg-rosa-coral text-blanco px-8 md:px-12 py-3 md:py-4 rounded-full font-medium hover:bg-rosa-coral/85 transition-all duration-300 shadow-md hover:shadow-lg text-sm md:text-base"
                   aria-label={`Reservar turno para ${treatment.name} en Vicente López por WhatsApp`}
                 >

@@ -48,7 +48,12 @@ const WhatsAppButton = () => {
               href={`https://wa.me/${office.phone}?text=${encodeURIComponent(office.message)}`}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                if (office.phone === '5491133681890') {
+                  trackWhatsAppVicenteLopez();
+                }
+                setOpen(false);
+              }}
               className="text-left px-4 py-3 rounded-xl text-sm font-medium text-gris-muy-oscuro bg-blanco-calido hover:bg-rosa-empolvado/30 transition-colors duration-200 whitespace-nowrap"
             >
               {office.name}
