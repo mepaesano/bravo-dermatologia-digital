@@ -20,8 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
-				display: ['Fraunces', 'Georgia', 'serif'],
+				sans: ['Nunito', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -30,23 +29,23 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#C0714F',
+					DEFAULT: '#F6A5A5',
 					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: '#F4F0EA',
-					foreground: '#5A544D'
+					DEFAULT: '#E8B6B6',
+					foreground: '#4B4B4B'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
 				muted: {
-					DEFAULT: '#F4F0EA',
-					foreground: '#5A544D'
+					DEFAULT: '#E8B6B6',
+					foreground: '#4B4B4B'
 				},
 				accent: {
-					DEFAULT: '#3E5A50',
+					DEFAULT: '#F6A5A5',
 					foreground: '#FFFFFF'
 				},
 				popover: {
@@ -57,39 +56,28 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// New palette
-				bone: '#FBF9F6',
-				sand: '#F4F0EA',
-				sage: {
-					DEFAULT: '#3E5A50',
-					lt: '#7EA294'
+				sidebar: {
+					DEFAULT: 'hsl(var(--sidebar-background))',
+					foreground: 'hsl(var(--sidebar-foreground))',
+					primary: 'hsl(var(--sidebar-primary))',
+					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+					accent: 'hsl(var(--sidebar-accent))',
+					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+					border: 'hsl(var(--sidebar-border))',
+					ring: 'hsl(var(--sidebar-ring))'
 				},
-				clay: {
-					DEFAULT: '#C0714F',
-					lt: '#E8CFC2'
-				},
-				ink: {
-					DEFAULT: '#211E1B',
-					2: '#5A544D',
-					3: '#8A827A'
-				},
-				line: '#E4DED5',
-				// Legacy aliases remapped to the new palette
-				'rosa-coral': '#C0714F',
-				'rosa-empolvado': '#E4DED5',
-				'blanco-calido': '#FBF9F6',
-				'gris-oscuro': '#5A544D',
-				'gris-muy-oscuro': '#211E1B',
+				// Updated color palette with better contrast
+				'rosa-coral': '#F6A5A5',
+				'rosa-empolvado': '#E8B6B6',
+				'blanco-calido': '#FFFCFA',
+				'gris-oscuro': '#4B4B4B',
+				'gris-muy-oscuro': '#2F2F2F',
 				'blanco': '#FFFFFF'
 			},
-			boxShadow: {
-				soft: '0 2px 10px rgba(33,30,27,0.06)',
-				lift: '0 12px 28px rgba(33,30,27,0.10)'
-			},
 			borderRadius: {
-				lg: '14px',
-				md: '12px',
-				sm: '10px'
+				lg: 'var(--radius)',
+				md: 'calc(var(--radius) - 2px)',
+				sm: 'calc(var(--radius) - 4px)'
 			},
 			keyframes: {
 				'accordion-down': {
